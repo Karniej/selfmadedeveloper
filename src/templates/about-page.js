@@ -16,7 +16,11 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <figure className="image" style={{width: "40%", float:'left', paddingRight: 20}}>
+                <img alt="selfmade developer" src="../img/me.jpg"/>
+              </figure>
+              <PageContent className="content" content={content} >
+              </PageContent>
             </div>
           </div>
         </div>

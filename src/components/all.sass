@@ -1,16 +1,30 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900')
 
 // Config vars
-// Kalidi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+// Kalidi logo brand color: #FDBB0B
+$selfmadedeveloper-yellow: #FDBB0B
+$selfmadedeveloper-yellow-invert: #FFF
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+$primary: $selfmadedeveloper-yellow
+$primary-invert: $selfmadedeveloper-yellow-invert
 $body-color: #333
+$navbar-item-hover-color: $selfmadedeveloper-yellow
+$navbar-tab-active-color: $selfmadedeveloper-yellow
+
+*
+  transition: 0.3s
+  font-family: 'Lato', sans-serif
+
+.navbar
+  text-transform: uppercase
 
 .navbar .navbar-menu
   box-shadow:none !important
+
+.image .hero-logo
+  width: 70%
+  margin: auto
 
 .content .taglist
   list-style: none
