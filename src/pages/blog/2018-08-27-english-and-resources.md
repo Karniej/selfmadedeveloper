@@ -2,15 +2,13 @@
 templateKey: blog-post
 title: English and resources
 date: 2018-08-27T15:04:10.000Z
-description: When starting learning how to code as a non-native English speaker, it is so important to learn English together that I think it actually should be the **first thing** to do when you decide to learn coding.
+description: When starting learning how to code as a non-native English speaker, it is so important to learn English together that I think it actually should be the first thing to do when you decide to learn coding.
 tags:
   - out of scope
 ---
 # **My short story**
 
-When starting **learning** how to code as a non-native English speaker, it is so important to learn English together that I think it actually should be the **first thing** to do when you decide to learn coding.I am from Poland and when I was young, my father had to go to the **USA** to make money.
-
-Thanks to it he understood that knowing English is very Important and I have been learning it since I was 6 or 7, when in polish schools there still wasn't even a standard as it is today. Owing to that fact, reading and writing in English now is pretty easy for me, but I still am working on my speaking.
+I am from Poland and when I was young, my father had to go to the **USA** to make money. Thanks to it he understood that knowing English is very Important and I have been learning it since I was 6 or 7, when in polish schools there still wasn't even a standard as it is today. Owing to that fact, reading and writing in English now is pretty easy for me, but I still am working on my speaking.
 
 ## **English while learning code**
 
