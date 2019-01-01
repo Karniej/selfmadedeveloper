@@ -9,7 +9,7 @@ tags:
   - javascript
 ---
 
->*Part I of a few-part series explaining how to learn coding by yourself*
+>*How I started learning programming in JavaScript and how my web development preparation led to mobile development. Part I of a few-part series explaining how to learn coding by yourself*
 
 # How to start learning programming
 

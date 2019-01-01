@@ -12,7 +12,10 @@ tags:
 
 # **React**
 
+By the end of May, React had it's 5th birthday, so it's a good time to write a post about introduction to React and React Native world.
+
 React was created by** Jordan Walke**, a software engineer at Facebook’s newsfeed in 2011 and open-sourced at JSConf US in May 2013.
+
 React is a JavaScript library for building user interfaces in a **declarative**, **component-based way** using a specific type of [XML](https://www.w3schools.com/xml/)-like syntax which is called JSX - mix of HTML and JavaScript. What does actually declarative and component-based mean?
 
 **Declarative:**

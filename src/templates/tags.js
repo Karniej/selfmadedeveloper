@@ -7,11 +7,29 @@ class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
     const postLinks = posts.map(post => (
-      <li key={post.node.fields.slug}>
-        <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
-        </Link>
-      </li>
+      <a href={post.node.fields.slug} className="post-container">
+      <div className="post" key={post.node.id}>
+        <div>
+          <Link
+            className="has-text-primary post-title"
+            to={post.node.fields.slug}
+          >
+            {post.node.frontmatter.title}
+          </Link>
+        </div>
+        <figure className="image is-centered">
+          <img
+            className="post-thumbnail"
+            alt="post thumbnail"
+            src={post.node.frontmatter.thumbnail.childImageSharp.fluid.src}
+          />
+        </figure>
+        <p>
+          {post.node.excerpt}
+        </p>
+        <small className="post-date">{post.node.frontmatter.date}</small>
+      </div>
+      </a>
     ))
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
@@ -22,22 +40,17 @@ class TagRoute extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className="section blog-post-container">
           <Helmet title={`${tag} | ${title}`} />
-          <div className="container content">
-            <div className="columns">
-              <div
-                className="column is-10 is-offset-1"
-                style={{ marginBottom: '6rem' }}
-              >
-                <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
-                <ul className="taglist">{postLinks}</ul>
-                <p>
-                  <Link to="/tags/">Browse all tags</Link>
-                </p>
-              </div>
+          <div className="container">
+            <h3 className="is-size-3 blog-post-title">{tagHeader}</h3>
+            <div className="posts-container">
+            {postLinks}
             </div>
-          </div>
+            </div>
+            <p>
+              <Link to="/tags/">Browse all tags</Link>
+            </p>
         </section>
       </Layout>
     )
@@ -61,11 +74,22 @@ export const tagPageQuery = graphql`
       totalCount
       edges {
         node {
+          excerpt(pruneLength: 200)
+          id
           fields {
             slug
           }
           frontmatter {
             title
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  src
+                }
+              }
+            }
           }
         }
       }

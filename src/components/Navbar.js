@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import github from '../img/github-icon.svg';
 import logo from "../img/selfmadedeveloper.png"
-const Navbar = class extends React.Component {
+class Navbar extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(
@@ -49,23 +48,23 @@ const Navbar = class extends React.Component {
               <span />
             </div>
           </div>
-          <div id="navMenu" className="navbar-menu">
-            <div className="navbar-start has-text-centered">
+          <div id="navMenu" className="navbar-menu ">
+            <div className="navbar-start has-text-centered ">
               <Link className="navbar-item" to="/about">
                 About me
               </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/Karniej/selfmadedeveloper"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+              <Link className="navbar-item" to="/tags/react-native/">
+                React Native
+              </Link>
+              <Link className="navbar-item" to="/tags/javascript">
+                JavaScript
+              </Link>
+              <Link className="navbar-item" to="/tags/out-of-scope/">
+                Out of Scope
+              </Link>
+              <Link className="navbar-item" to="/tags/learning-programming">
+                Learning Programming
+              </Link>
             </div>
           </div>
         </div>
