@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Hello World
 date: 2018-07-01T15:04:10.000Z
+thumbnail: /static/img/hello-world-thumbnail.jpg
 description: This is the first post on my blog, I think there won't be a better time for introduction, so let me tell you my story of how I became a self-taught developer!
 tags:
   - out of scope
