@@ -1,6 +1,6 @@
 ---
-templateKey: 'about-page'
-path: /who-am-i
+templateKey: 'about'
+path: /about
 title: Who am I
 ---
 

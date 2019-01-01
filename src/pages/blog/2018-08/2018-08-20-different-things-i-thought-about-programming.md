@@ -1,8 +1,9 @@
 ---
 templateKey: blog-post
 title: Different things I thought about programming
-date: 2018-07-01T15:04:10.000Z
+date: 2018-08-20T15:04:10.000Z
 description: When I got into my first job as a developer I thought "why won’t everybody who works there like more than 5 years haven’t started their own company yet?"
+thumbnail: "/static/img/IMG_1433.jpg"
 tags:
   - learning programming
   - out of scope

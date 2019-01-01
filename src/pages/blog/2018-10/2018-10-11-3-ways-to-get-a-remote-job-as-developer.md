@@ -1,10 +1,12 @@
 ---
 templateKey: blog-post
 title: 3 ways to get a remote job as a developer
-date: 2018-09-16T07:43:10.000Z
-description:
+date: 2018-10-11T07:43:10.000Z
+description: Working remotely tips and tricks.
+thumbnail: "/static/img/img_0351-1-520x528.jpg"
 tags:
   - learning programming
+  - working remotely
 ---
 
 # Intro

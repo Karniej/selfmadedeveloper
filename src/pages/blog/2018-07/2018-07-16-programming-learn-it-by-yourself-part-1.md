@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Programming-learn it by yourself part I
 date: 2018-07-16T09:04:10.000Z
 description: How I started learning programming in JavaScript and how my web development preparation led to mobile development.
+thumbnail: "/static/img/img_0566-1-520x520.jpg"
 tags:
   - learning programming
   - javascript
@@ -10,8 +11,7 @@ tags:
 
 >*Part I of a few-part series explaining how to learn coding by yourself*
 
-# How to start learning programming?
-
+# How to start learning programming
 
 I receive that question on my [Instagram](https://www.instagram.com/selfmadedeveloper/) almost everyday. I've been sending people to read **my story** of [how I became a developer](https://selfmadedeveloper.com/how-i-became-selfmade-developer/), because I thought that my example is a quite good one to follow, but there are a few **more things** to consider than in my first post on this blog. That's why I decided to write **more-like-guide article**.
 
@@ -29,7 +29,7 @@ ___
 
 So you decided you'd like to do the **web development** and now you're looking for the best ways to do learn it by **yourself**. Few google searches and you're lost, because of [overwhelming amount of things to learn](https://codeburst.io/the-2018-web-developer-roadmap-826b1b806e8d). This is when you probably start to panic, because you now think that you'll never learn that much stuff! Don't stress yourself, there's a lot of to learn, but you just have to **structure** and **sort** this things out. Everything will be clearer in a moment.
 
-## Let's start from the beginning.
+## Let's start from the beginning
 
 ### **1. How The Web works**
 
@@ -70,18 +70,15 @@ After you'll go through all the 9 courses listed above, you should have a grasp 
 
 After going through some **HTML** and **CSS** it focus a lot on **JavaScript**. In order to get **The** **Freecodecamp's** **Certificate**, you'll have to go through a lot of **JavaScript** assignments and a few projects which you'll have to do by yourself. This is an amazing place to learn and multitude people went through the course. So when you'll stuck on some assignment, you'll find many answers for them online.
 
-
 >*When you'll go through Freecodecamp, I recommend you going back to codecademy and trying out the courses on ReactJS.*
-
 
 ## **Those are the first great steps into becoming web developer!**
 
 There's quite a lot to learn there and even a lot more will be covered in the next articles. Although I think this is should be enough for at least** first 3 months**, if you don't have more than **4 hours a day** for coding. You might finish the courses quicker, it all depends on** how much you'll be able to dedicate** for learning. More on JavaScript and frameworks will be covered in the next articles.
 
-
 # Summary
 
-### **Before diving into the world of programming knowledge...**
+## **Before diving into the world of programming knowledge**
 
 Here are a few important things to remember which could help you in learning on all steps of your career, not only in the beginning. It also can be** applicable for other parts of your life**, that's why read it attentively.
 

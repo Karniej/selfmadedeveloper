@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Developers-the most positive community in the world
 date: 2018-08-20T15:04:10.000Z
 description: When I was younger, I've been in a lot of social communities. Only since my adulthood I've been for a long time between beatboxers, music producers, forwarders, classic musicians and a few others.
+thumbnail: "/static/img/IMG_1420.jpg"
 tags:
   - out of scope
 ---

@@ -3,6 +3,7 @@ templateKey: blog-post
 title: React Native Quick Introduction
 date: 2018-07-02T15:04:10.000Z
 description: By the end of May, React had it's 5th birthday, so it's a good time to write a post about introduction to React and React Native world.
+thumbnail: "/static/img/React_Native_Logo-e1533896717110-520x520.png"
 tags:
   - react native
 ---

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import github from '../img/github-icon.svg';
-import logo from '../img/logo.png';
-
+import logo from "../img/selfmadedeveloper.png"
 const Navbar = class extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
@@ -37,7 +36,11 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Selfmade developer" />
+              <img
+                alt="selfmade developer logo"
+                src={logo}
+                className="hero-logo"
+              />
             </Link>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">
@@ -49,7 +52,7 @@ const Navbar = class extends React.Component {
           <div id="navMenu" className="navbar-menu">
             <div className="navbar-start has-text-centered">
               <Link className="navbar-item" to="/about">
-                Who am I
+                About me
               </Link>
             </div>
             <div className="navbar-end has-text-centered">

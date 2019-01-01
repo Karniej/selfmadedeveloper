@@ -1,8 +1,9 @@
 ---
 templateKey: blog-post
 title: Framework doesn't matter in the end
-date: 2018-09-16T07:43:10.000Z
-description:
+date: 2018-09-30T07:43:10.000Z
+description: Post about choosing right JavaScript framework
+thumbnail: "/static/img/IMG_2905.PNG"
 tags:
   - learning programming
   - javascript

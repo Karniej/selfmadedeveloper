@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Programming in state of flow
 date: 2018-09-20T05:43:10.000Z
 description: Programming in state of flow
+thumbnail: "/static/img/me.jpg"
 tags:
   - out of scope
   - learning programming

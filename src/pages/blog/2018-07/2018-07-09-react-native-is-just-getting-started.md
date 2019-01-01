@@ -3,6 +3,7 @@ templateKey: blog-post
 title: React Native is just getting started
 date: 2018-07-09T00:19:10.000Z
 description: React Native's alleged death.
+thumbnail: "/static/img/img_0560-520x520.jpg"
 tags:
   - out of scope
 ---
@@ -22,7 +23,7 @@ I started learning this technology in August 2017 and even then the technology w
 
 React Native is moving very fast and it's changing a lot, for such big company like AirBnb it was a heavy burden, but they placed a bet on it, because they had many React developers then and they were aware of this.
 
-# I believe that React Native is just getting started.
+# I believe that React Native is just getting started
 
 [Latest article](https://facebook.github.io/react-native/blog/2018/06/14/state-of-react-native-2018) about it from Facebook is just confirming that. The company which invented the technology is investing more and more into it and as the technology has started to mature it's a great information for the **future**.
 

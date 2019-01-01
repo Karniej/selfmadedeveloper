@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Programming-learn it by yourself part II
 date: 2018-07-23T15:04:10.000Z
 description: Second part of the series when I talk about how I learned programming by myself.
+thumbnail: "/static/img/img_0557-520x520.jpg"
 tags:
   - learning programming
   - javascript
@@ -50,16 +51,13 @@ The best place I can think of to take your JavaScript to the next level is [jav
 In this course, you focus on building 30 small and fun applications with JavaScript for 30 days. You can do the course in one take, or one lesson a day, it all depends on how much time you have. I recommend to go through it all at least 2-3 times.*
 
 >*When you watch the video with the course and you program together with a teacher, you test that what the teacher says works and you feel good, because you wrote something that works.*
-
 >*Actually the teacher wrote that and you've rewritten it. Be aware that if you do that, you grasp a little of how does it works, but you actually don't know how to write it itself. That's why I recommend 3 steps of working with online courses.*
 
 - watch the video and write the code together with a teacher.
 - watch the video again, but more carefully and don't write the code, only write some notes.
 - write the exact same program as in step 1,but this time all by yourself.
 
-
 This was a great way of learning for me, because I knew how the app should work and after watching it Second time I actually knew how it should be implemented. On 3rd step, when you program all by yourself, you figure out how to finish the app.
-
 
 This course introduces you to a few interesting [Web API](https://developer.mozilla.org/en-US/docs/WebAPI)'s which you'll probably use in your daily job. After going through all of the materials in this online course, my recommendation is to take 1 application which you liked the most and play with it by remaking it and adding more features to it. I actually took the [webcam](https://karniej.github.io/glitchcam/) fun and built added a few features to it.
 
@@ -105,7 +103,7 @@ When you'll go through all those courses, there's time to practice. My recommend
 
 If you want to learn React, you should build something similar to this application, try to built it only with React, without Redux state management system first. Then you should understand how React exactly works and why you need Redux.
 
->*Fetching data from an API and displaying it is very important task to do in your everyday job as JavaScript developer. Knowing this, you now definitely have to do some practice in that. That’s why I have an assignment for you!* 
+>*Fetching data from an API and displaying it is very important task to do in your everyday job as JavaScript developer. Knowing this, you now definitely have to do some practice in that. That’s why I have an assignment for you!*
 
 **The Assingment**:
 

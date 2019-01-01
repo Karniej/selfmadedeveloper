@@ -10,51 +10,37 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section class="hero is-medium is-black">
-          <div class="hero-body ">
-            <div class="container">
-
-            <figure class="image is-centered">
-            <img
-              alt="selfmade developer logo"
-              src="../img/selfmadedeveloper.png"
-              class="hero-logo"
-            />
-            </figure>
-            </div>
-          </div>
-        </section>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-2">Latest Stories</h1>
-            </div>
-              <div className="posts-container">
-            {posts.map(({ node: post }) => (
-              <div
-                className="post"
-                key={post.id}
-              >
-              <figure class="image is-centered">
-                <img class="post-thumbnail" src={post.frontmatter.thumbnail} />
-              </figure>
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
-                    {post.frontmatter.title}
-                  </Link>
-                  <span> &bull; </span>
-                  <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="button is-small" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
-                </p>
-              </div>
-            ))}
+            <div className="posts-container">
+              {posts.map(({ node: post }) => (
+                <div className="post" key={post.id}>
+                  <div className="post-title-container">
+                    <Link
+                      className="has-text-primary post-title"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                  </div>
+                  <figure className="image is-centered">
+                    <img
+                      className="post-thumbnail"
+                      alt="post thumbnail"
+                      src={post.frontmatter.thumbnail.childImageSharp.fluid.src}
+                    />
+                  </figure>
+                  <p>
+                    {post.excerpt}
+
+                    {/*  <Link className="button is-small" to={post.fields.slug}>
+                      Keep Reading →
+                    </Link>
+                  */}
+                  </p>
+                  <small className="post-date">{post.frontmatter.date}</small>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -88,6 +74,13 @@ export const pageQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
+            thumbnail {
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  src
+                }
+              }
+            }
           }
         }
       }

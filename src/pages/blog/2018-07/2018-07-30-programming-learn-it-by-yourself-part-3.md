@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Programming-learn it by yourself part III
 date: 2018-07-30T08:04:10.000Z
 description: Third and last part of the series I talk how I learned JavaScript and React Native by myself
+thumbnail: "/static/img/img_2111-520x520.jpg"
 tags:
   - learning programming
   - javascript
@@ -45,7 +46,7 @@ Those courses are great for you if you want to get your knowledge in a structure
 >*Those courses are also updated by the author, so you'll always get the updates when there has been any change in particular technology.*
 >*I bought a new course from Wes Bos [Fullstack Advanced React & GraphQL](https://AdvancedReact.com/friend/SELFMAD)**
 
-___
+---
 
 ## **2. State management**
 
@@ -57,7 +58,7 @@ Things are changing now in the React world and new emerging state libraries are 
 
 So if you want to learn Redux, there's another awesome [free course](https://LearnRedux.com/friend/SELFMADE) from Wes Bos, where he explains basic concepts of **Redux** and shows how to build Instagram-like app with help of Redux.
 
-___
+---
 
 ## **3. Working with React**
 

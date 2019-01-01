@@ -3,6 +3,7 @@ templateKey: blog-post
 title: English and resources
 date: 2018-08-27T15:04:10.000Z
 description: When starting learning how to code as a non-native English speaker, it is so important to learn English together that I think it actually should be the first thing to do when you decide to learn coding.
+thumbnail: "/static/img/IMG_2903.PNG"
 tags:
   - out of scope
 ---

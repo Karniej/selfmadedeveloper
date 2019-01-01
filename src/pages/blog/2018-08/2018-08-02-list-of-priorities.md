@@ -3,6 +3,7 @@ templateKey: blog-post
 title: List of priorities
 date: 2018-08-02T15:04:10.000Z
 description: Thoughts on prioritising
+thumbnail: "/static/img/img_0045-520x520.jpg"
 tags:
   - out of scope
 ---

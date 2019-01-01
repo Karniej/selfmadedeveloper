@@ -18,6 +18,13 @@ exports.createPages = ({ actions, graphql }) => {
             frontmatter {
               tags
               templateKey
+              thumbnail {
+                childImageSharp{
+                  fluid(maxWidth: 1000) {
+                    src
+                  }
+                }
+              }
             }
           }
         }
