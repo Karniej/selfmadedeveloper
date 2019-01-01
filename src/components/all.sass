@@ -68,6 +68,10 @@ $border-radius: 6px
   grid-template-columns: repeat(3, 1fr)
   grid-column-gap: 2em
   grid-row-gap: 2em
+  @media screen and (max-width: $break-medium)
+    grid-template-columns: repeat(2, 1fr)
+  @media screen and (max-width: $break-small)
+    grid-template-columns: fit-content(100%)
 
 .post
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
