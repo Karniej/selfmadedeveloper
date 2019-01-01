@@ -1,14 +1,15 @@
 @import "~bulma/sass/utilities/initial-variables"
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900')
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700')
 
 // Config vars
 // Kalidi logo brand color: #FDBB0B
 $selfmadedeveloper-yellow: #FDBB0B
 $selfmadedeveloper-yellow-invert: #FFF
+$body-color: #0a0a0a
 
 $primary: $selfmadedeveloper-yellow
 $primary-invert: $selfmadedeveloper-yellow-invert
-$body-color: #333
 $navbar-item-hover-color: $selfmadedeveloper-yellow
 $navbar-tab-active-color: $selfmadedeveloper-yellow
 $break-small: 578px
@@ -20,14 +21,17 @@ $border-radius: 6px
   transition: 0.3s
   font-family: 'Lato', sans-serif
 
+html
+  background-color: $body-color
+
 .navbar
-  text-transform: uppercase
+  font-family: 'Oswald', sans-serif
 
 .navbar .navbar-menu
   box-shadow:none !important
 
 .image .hero-logo
-  width: 60%
+  width: 10%
   margin: auto
   margin-top: 5px
 
@@ -64,6 +68,8 @@ $border-radius: 6px
   margin-top: 0 !important
 
 .posts-container
+  margin-top: 6em
+  background-color: $selfmadedeveloper-yellow-invert
   display: grid
   grid-template-columns: repeat(3, 1fr)
   grid-column-gap: 2em
@@ -80,7 +86,20 @@ $border-radius: 6px
   padding: 2em
   border-radius: $border-radius
   border-width: 0px
+  background-color: $selfmadedeveloper-yellow-invert
+
+.post-title
+  text-transform: uppercase
+  font-family: 'Oswald', sans-serif
+  font-size: 20px
+
+.post-date
+  float: right
+  padding-top: 1em
 
 .post-thumbnail
   width: 100%
+  padding-top: 1em
+  padding-bottom: 1em
+
 @import "~bulma"

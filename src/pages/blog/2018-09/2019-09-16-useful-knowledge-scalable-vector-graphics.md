@@ -2,7 +2,8 @@
 templateKey: blog-post
 title: Usefull knowledge - Scalable Vector Graphics
 date: 2018-09-16T07:43:10.000Z
-description:
+description: SVG
+thumbnail: "/static/img/IMG_2828.jpg"
 tags:
   - learning programming
 ---

@@ -3,6 +3,7 @@ templateKey: blog-post
 title: Best framework for beginners
 date: 2018-08-10T10:28:10.000Z
 description: This article is only my opinion.
+thumbnail: "/static/img/IMG_2700.jpg"
 tags:
   - learning programming
   - javascript

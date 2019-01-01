@@ -2,7 +2,8 @@
 templateKey: blog-post
 title: You Don't Know JavaScript - Scope & Closure notes
 date: 2018-09-24T08:04:10.000Z
-description:
+description: Notes
+thumbnail: "/static/img/scope&closurenotes.jpg"
 tags:
   - learning programming
 ---
