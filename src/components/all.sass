@@ -11,6 +11,10 @@ $primary-invert: $selfmadedeveloper-yellow-invert
 $body-color: #333
 $navbar-item-hover-color: $selfmadedeveloper-yellow
 $navbar-tab-active-color: $selfmadedeveloper-yellow
+$break-small: 578px
+$break-medium: 900px
+$break-large: 1200px
+$border-radius: 6px
 
 *
   transition: 0.3s
@@ -59,4 +63,20 @@ $navbar-tab-active-color: $selfmadedeveloper-yellow
 .margin-top-0
   margin-top: 0 !important
 
+.posts-container
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-column-gap: 2em
+  grid-row-gap: 2em
+
+.post
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
+  padding: 2em
+  border-radius: $border-radius
+  border-width: 0px
+
+.post-thumbnail
+  width: 100%
 @import "~bulma"
