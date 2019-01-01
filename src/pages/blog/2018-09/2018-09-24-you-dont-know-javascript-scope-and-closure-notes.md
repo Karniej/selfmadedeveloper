@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: Usefull knowledge - Scalable Vector Graphics
+title: You Don't Know JavaScript - Scope & Closure notes
 date: 2018-09-24T08:04:10.000Z
 description:
 tags:
