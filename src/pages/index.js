@@ -14,8 +14,9 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="posts-container">
               {posts.map(({ node: post }) => (
+                <a href={post.fields.slug} className="post-container">
                 <div className="post" key={post.id}>
-                  <div className="post-title-container">
+                  <div>
                     <Link
                       className="has-text-primary post-title"
                       to={post.fields.slug}
@@ -32,14 +33,10 @@ export default class IndexPage extends React.Component {
                   </figure>
                   <p>
                     {post.excerpt}
-
-                    {/*  <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
-                  */}
                   </p>
                   <small className="post-date">{post.frontmatter.date}</small>
                 </div>
+                </a>
               ))}
             </div>
           </div>

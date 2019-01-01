@@ -1,11 +1,10 @@
 ---
 templateKey: blog-post
 title: Time - our most valuable asset
-date: 2018-07-30T08:04:10.000Z
+date: 2018-07-26T08:04:10.000Z
 description: Third and last part of the series I talk how I learned JavaScript and React Native by myself
 thumbnail: "/static/img/img_0049-520x520.jpg"
 tags:
-  - learning programming
   - out of scope
   - working remotely
   - self-development
