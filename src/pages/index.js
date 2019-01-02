@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 
 export default class IndexPage extends React.Component {
@@ -14,15 +14,15 @@ export default class IndexPage extends React.Component {
           <div className="container">
             <div className="posts-container">
               {posts.map(({ node: post }) => (
-                <a href={post.fields.slug} className="post-container">
-                <div className="post" key={post.id}>
+                <a href={post.fields.slug} key={post.id} className="post-container">
+                <div className="post" >
                   <div>
-                    <Link
-                      className="has-text-primary post-title"
+                    <h1
+                      className="post-title"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
-                    </Link>
+                    </h1>
                   </div>
                   <figure className="image is-centered">
                     <img
