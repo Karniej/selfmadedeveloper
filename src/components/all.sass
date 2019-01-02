@@ -18,7 +18,7 @@ $break-small: 578px
 $break-medium: 900px
 $break-large: 1200px
 $border-radius: 5px
-$default-margin-top: 6em
+$default-margin: 4em
 
 *
   transition: 0.3s
@@ -44,6 +44,9 @@ $default-margin-top: 6em
   width: 10%
   margin: auto
   margin-top: 5px
+
+.content-container
+  padding-top: $default-margin
 
 .content .taglist
   list-style: none
@@ -78,7 +81,7 @@ $default-margin-top: 6em
   margin-top: 0 !important
 
 .posts-container
-  margin-top: $default-margin-top
+  // margin-top: $default-margin
   background-color: $selfmadedeveloper-yellow-invert
   display: grid
   grid-template-columns: repeat(3, 1fr)
@@ -122,8 +125,8 @@ $default-margin-top: 6em
   padding-top: 1em
   padding-bottom: 1em
 
-.blog-post-container
-  margin-top: $default-margin-top
+// .blog-post-container
+//   margin-top: $default-margin
 
 .blog-post-title
   text-transform: uppercase
