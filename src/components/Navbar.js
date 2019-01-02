@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import logo from "../img/selfmadedeveloper.png"
+import logo from '../img/selfmadedeveloper.png';
 class Navbar extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
@@ -50,19 +50,39 @@ class Navbar extends React.Component {
           </div>
           <div id="navMenu" className="navbar-menu ">
             <div className="navbar-start has-text-centered ">
-              <Link className="navbar-item" to="/about">
+              <Link
+                className="navbar-item"
+                activeStyle={{ color: '#FDBB0B' }}
+                to="/about"
+              >
                 About me
               </Link>
-              <Link className="navbar-item" to="/tags/react-native/">
+              <Link
+                className="navbar-item"
+                activeStyle={{ color: '#FDBB0B' }}
+                to="/tags/react-native/"
+              >
                 React Native
               </Link>
-              <Link className="navbar-item" to="/tags/javascript">
+              <Link
+                className="navbar-item"
+                activeStyle={{ color: '#FDBB0B' }}
+                to="/tags/javascript"
+              >
                 JavaScript
               </Link>
-              <Link className="navbar-item" to="/tags/out-of-scope/">
+              <Link
+                className="navbar-item"
+                activeStyle={{ color: '#FDBB0B' }}
+                to="/tags/out-of-scope/"
+              >
                 Out of Scope
               </Link>
-              <Link className="navbar-item" to="/tags/learning-programming">
+              <Link
+                className="navbar-item"
+                activeStyle={{ color: '#FDBB0B' }}
+                to="/tags/learning-programming"
+              >
                 Learning Programming
               </Link>
             </div>
@@ -71,6 +91,6 @@ class Navbar extends React.Component {
       </nav>
     );
   }
-};
+}
 
 export default Navbar;

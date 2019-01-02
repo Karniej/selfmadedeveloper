@@ -11,31 +11,28 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section className="section">
-          <div className="container">
+          <div className="container content-container">
             <div className="posts-container">
               {posts.map(({ node: post }) => (
-                <a href={post.fields.slug} key={post.id} className="post-container">
-                <div className="post" >
-                  <div>
-                    <h1
-                      className="post-title"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </h1>
+                <a
+                  href={post.fields.slug}
+                  key={post.id}
+                  className="post-container"
+                >
+                  <div className="post">
+                    <h1 className="post-title">{post.frontmatter.title}</h1>
+                    <figure className="image is-centered">
+                      <img
+                        className="post-thumbnail"
+                        alt="post thumbnail"
+                        src={
+                          post.frontmatter.thumbnail.childImageSharp.fluid.src
+                        }
+                      />
+                    </figure>
+                    <p>{post.excerpt}</p>
+                    <small className="post-date">{post.frontmatter.date}</small>
                   </div>
-                  <figure className="image is-centered">
-                    <img
-                      className="post-thumbnail"
-                      alt="post thumbnail"
-                      src={post.frontmatter.thumbnail.childImageSharp.fluid.src}
-                    />
-                  </figure>
-                  <p>
-                    {post.excerpt}
-                  </p>
-                  <small className="post-date">{post.frontmatter.date}</small>
-                </div>
                 </a>
               ))}
             </div>
