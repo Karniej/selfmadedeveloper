@@ -11,7 +11,7 @@ class TagRoute extends React.Component {
       <div className="post" key={post.node.id}>
         <div>
           <Link
-            className="has-text-primary post-title"
+            className="post-title"
             to={post.node.fields.slug}
           >
             {post.node.frontmatter.title}
