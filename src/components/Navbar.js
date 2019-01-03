@@ -53,6 +53,13 @@ class Navbar extends React.Component {
               <Link
                 className="navbar-item"
                 activeStyle={{ color: '#FDBB0B' }}
+                to="/"
+              >
+                Home
+              </Link>
+              <Link
+                className="navbar-item"
+                activeStyle={{ color: '#FDBB0B' }}
                 to="/about"
               >
                 About me
