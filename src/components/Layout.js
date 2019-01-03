@@ -1,7 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import github from '../img/github-icon.svg';
 import Navbar from '../components/Navbar';
 import './all.sass';
 
@@ -45,17 +44,6 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <Navbar />
         <div>{children}</div>
-        <div className="has-text-centered">
-          <a
-            href="https://github.com/Karniej/selfmadedeveloper"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="icon">
-              <img src={github} alt="Github" />
-            </span>
-          </a>
-        </div>
       </div>
     )}
   />
