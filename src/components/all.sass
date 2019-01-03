@@ -33,6 +33,22 @@ $default-margin: 4em
   text-transform: uppercase
   letter-spacing: 0.4px
 
+
+.navbar-end .icons-container
+  align-items: center
+  justify-content: center
+  display: flex
+  flex-direction: row
+
+.navbar-end .icons-container a
+  padding: 0.5em
+
+.navbar-menu a svg:hover #github
+  fill: $selfmadedeveloper-yellow
+
+.navbar-menu a svg:hover #instagram
+  fill: $selfmadedeveloper-yellow
+
 .navbar-item:hover
   background-color: $default-black !important
   color: $selfmadedeveloper-yellow !important
@@ -81,7 +97,6 @@ $default-margin: 4em
   margin-top: 0 !important
 
 .posts-container
-  // margin-top: $default-margin
   background-color: $selfmadedeveloper-yellow-invert
   display: grid
   grid-template-columns: repeat(3, 1fr)

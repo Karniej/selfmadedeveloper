@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import logo from '../img/selfmadedeveloper.png';
+import InstagramIcon from '../img/InstagramIcon';
+import GithubIcon from '../img/GithubIcon';
+
 class Navbar extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
@@ -92,6 +95,28 @@ class Navbar extends React.Component {
               >
                 Learning Programming
               </Link>
+            </div>
+            <div className="navbar-end">
+            <div className="icons-container">
+                <a
+                  href="https://www.instagram.com/selfmadedeveloper/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="icon">
+                    <InstagramIcon />
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/Karniej/selfmadedeveloper"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="icon">
+                    <GithubIcon />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
