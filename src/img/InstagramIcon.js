@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const InstagramIcon = () => (
   <svg
@@ -16,6 +16,6 @@ const InstagramIcon = () => (
       />
     </g>
   </svg>
-)
+);
 
 export default InstagramIcon
