@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const GithubIcon = () => (
   <svg
@@ -19,6 +19,6 @@ const GithubIcon = () => (
       />
     </g>
   </svg>
-);
+)
 
-export default GithubIcon;
+export default GithubIcon
