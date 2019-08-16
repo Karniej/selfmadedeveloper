@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import logo from '../img/selfmadedeveloper.png';
 import InstagramIcon from '../img/InstagramIcon';
 import GithubIcon from '../img/GithubIcon';
+import TwitterIcon from '../img/TwitterIcon';
 
 class Navbar extends React.Component {
   componentDidMount() {
@@ -98,6 +99,15 @@ class Navbar extends React.Component {
             </div>
             <div className="navbar-end">
             <div className="icons-container">
+                <a
+                  href="https://twitter.com/pawe_kar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span className="icon">
+                    <TwitterIcon />
+                  </span>
+                </a>
                 <a
                   href="https://www.instagram.com/selfmadedeveloper/"
                   target="_blank"
