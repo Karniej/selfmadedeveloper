@@ -50,6 +50,9 @@ $default-margin: 4em
 .navbar-menu a svg:hover #instagram
   fill: $selfmadedeveloper-yellow
 
+.navbar-menu a svg:hover #twitter
+  fill: $selfmadedeveloper-yellow
+
 .navbar-item:hover
   background-color: $default-black !important
   color: $selfmadedeveloper-yellow !important
@@ -100,9 +103,11 @@ $default-margin: 4em
 .posts-container
   background-color: $selfmadedeveloper-yellow-invert
   display: grid
-  grid-template-columns: repeat(3, 1fr)
+  grid-template-columns: repeat(4, 1fr)
   grid-column-gap: 2em
   grid-row-gap: 2em
+  @media screen and (max-width: $break-large)
+    grid-template-columns: repeat(3, 1fr)
   @media screen and (max-width: $break-medium)
     grid-template-columns: repeat(2, 1fr)
   @media screen and (max-width: $break-small)
