@@ -1,9 +1,8 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import logo from '../img/selfmadedeveloper.png'
-import InstagramIcon from '../img/InstagramIcon'
-import GithubIcon from '../img/GithubIcon'
-import TwitterIcon from '../img/TwitterIcon'
+import React from 'react';
+import { Link } from 'gatsby';
+import logo from '../img/selfmadedeveloper.png';
+import InstagramIcon from '../img/InstagramIcon';
+import GithubIcon from '../img/GithubIcon';
 
 class Navbar extends React.Component {
   componentDidMount() {
@@ -11,21 +10,21 @@ class Navbar extends React.Component {
     const $navbarBurgers = Array.prototype.slice.call(
       document.querySelectorAll('.navbar-burger'),
       0
-    )
+    );
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
       // Add a click event on each of them
       $navbarBurgers.forEach(el => {
         el.addEventListener('click', () => {
           // Get the target from the "data-target" attribute
-          const target = el.dataset.target
-          const $target = document.getElementById(target)
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
 
           // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active')
-          $target.classList.toggle('is-active')
-        })
-      })
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
     }
   }
 
@@ -98,16 +97,7 @@ class Navbar extends React.Component {
               </Link>
             </div>
             <div className="navbar-end">
-              <div className="icons-container">
-                <a
-                  href="https://twitter.com/pawe_kar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon">
-                    <TwitterIcon />
-                  </span>
-                </a>
+            <div className="icons-container">
                 <a
                   href="https://www.instagram.com/selfmadedeveloper/"
                   target="_blank"
@@ -118,7 +108,7 @@ class Navbar extends React.Component {
                   </span>
                 </a>
                 <a
-                  href="https://github.com/Karniej"
+                  href="https://github.com/Karniej/selfmadedeveloper"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -131,8 +121,8 @@ class Navbar extends React.Component {
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }
 
-export default Navbar
+export default Navbar;

@@ -1,8 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Selfmade Developer Blog',
-    description:
-      'This repo contains blog contents for blog of Paweł Karniej. React Native, self-development and thoughts about software development industry.',
+    description: 'This repo contains blog contents for blog of Paweł Karniej. React Native, self-development and thoughts about software development industry.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -54,8 +53,8 @@ module.exports = {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',
-            },
-          },
+            }
+          }
         ],
       },
     },
