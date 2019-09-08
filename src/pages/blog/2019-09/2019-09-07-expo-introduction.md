@@ -9,14 +9,9 @@ tags:
   - react
 ---
 
->I decided that I'll repost all education-related posts from my [Instagram](https://www.instagram.com/selfmadedeveloper/) here, so it won't get lost in the feed of beautiful pictures.
-
-## Post
-
-Today I wanted to talk a little bit about Expo.
-
 ### What is Expo
 
+Today I wanted to talk a little bit about Expo.
 From Docs: Expo is a set of tools and services for building, deploying, and quickly iterating on native iOS, Android, and web apps from the same codebase.
 
 ### Why use Expo
