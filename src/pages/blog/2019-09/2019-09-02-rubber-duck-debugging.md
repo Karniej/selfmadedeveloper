@@ -1,9 +1,9 @@
 ---
 templateKey: blog-post
-title: Debugging Techniques: Rubber-ducking methode
+title: Debugging Techniques-Rubber-ducking methode
 date: 2019-09-02T20:03:10.000Z
 description: Debugging tips and tricks.
-thumbnail: "/static/img/904B1DC-7C29-4741-9F6B-2174BE9C9E80.jpg"
+thumbnail: "/static/img/welcome-back.jpg"
 tags:
   - learning programming
   - working remotely

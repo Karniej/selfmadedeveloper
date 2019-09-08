@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Learning TypeScript
 date: 2019-09-05T22:03:10.000Z
 description: Type safety in React Native.
-thumbnail: "/static/img/5B8C2ADA-3725-47BD-84CB-6A1E5CF25F94.jpg"
+thumbnail: "/static/img/learning-typescript.jpg"
 tags:
   - learning programming
   - react

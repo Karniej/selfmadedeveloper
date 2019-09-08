@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Expo introduction
 date: 2019-09-07T22:13:10.000Z
 description: Using Expo to develop React Native application.
-thumbnail: "/static/img/44AF8ADC-B646-493D-BCFB-E1D5046E116A.jpg"
+thumbnail: "/static/img/expo-introduction.jpg"
 tags:
   - learning programming
   - react
