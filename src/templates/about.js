@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Form from '../components/Form'
 import Content, { HTMLContent } from '../components/Content'
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
@@ -9,14 +10,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
   return (
     <section className="section section--gradient">
-      <div className="container content-container">
+      <Form />
+      <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h2 className=" is-size-2 blog-post-title">{title}</h2>
-            <figure
-              className="image"
-              style={{ width: '40%', float: 'left', paddingRight: 20 }}
-            >
+            <figure className="image" style={{ width: '40%', float: 'left', paddingRight: 20 }}>
               <img alt="selfmade developer" src="../img/me.jpg" />
             </figure>
             <PageContent className="content" content={content} />
@@ -30,7 +29,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
-  contentComponent: PropTypes.func,
+  contentComponent: PropTypes.func
 }
 
 const AboutPage = ({ data }) => {
@@ -48,7 +47,7 @@ const AboutPage = ({ data }) => {
 }
 
 AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired
 }
 
 export default AboutPage
