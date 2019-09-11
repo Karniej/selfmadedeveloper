@@ -20,7 +20,7 @@ const Form = () => {
 
     fetch(form.action, {
       method: form.method,
-      body: new FormData(form),
+      body: new FormData(form)
     }).then(res => {
       console.log('res: ', res)
       setLoading(false)
@@ -34,29 +34,19 @@ const Form = () => {
 
   return (
     <div className="columns section">
-      <div className="column"></div>
-      <div className="post column is-four-fifths">
+      <div className="post column  container">
         <div
           id="mlb2-936104"
           className="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-936104 columns is-vcentered is-half form-container"
         >
-          <div
-            className="column"
-            style={{ display: formVisibility ? 'block' : 'none' }}
-          >
+          <div className="column" style={{ display: formVisibility ? 'block' : 'none' }}>
             <h1 className="form-title">Stay informed about newest articles!</h1>
-            <p className="form-subtitle">
-              Join the newsletter to receive weekly blog updates.
-            </p>
+            <p className="form-subtitle">Join the newsletter to receive weekly blog updates.</p>
           </div>
-          <div
-            className="column"
-            style={{ display: !formVisibility ? 'block' : 'none' }}
-          >
+          <div className="column" style={{ display: !formVisibility ? 'block' : 'none' }}>
             <h1 className="form-title">Confirmatiom email has been sent!</h1>
             <p className="form-subtitle">
-              Check your email and confirm your subscription to weekly
-              newsletter.
+              Check your email and confirm your subscription to weekly newsletter.
             </p>
           </div>
           <div className="column">
@@ -98,7 +88,6 @@ const Form = () => {
           </div>
         </div>
       </div>
-      <div className="column"></div>
     </div>
   )
 }
