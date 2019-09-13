@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Form from '../components/Form'
 
 class TagRoute extends React.Component {
   render() {
@@ -30,21 +29,19 @@ class TagRoute extends React.Component {
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? '' : 's'
-    } tagged with “${tag}”`
+    const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged “${tag}”`
 
     return (
       <Layout>
         <section className="section blog-post-container">
-          <Form />
           <Helmet title={`${tag} | ${title}`} />
-          <div className="container ">
-            <h2 className="is-size-3 blog-post-title">{tagHeader}</h2>
+          <div className="container">
+            <h2 className="subtitle tags-header">{tagHeader}</h2>
             <div className="posts-container">{postLinks}</div>
-            <p>
-              <Link to="/tags/">Browse all tags</Link>
-            </p>
+            <hr />
+             <span className="tag is-primary is-large">
+              <Link className="link" to="/tags/">Browse all tags</Link>
+              </span>
           </div>
         </section>
       </Layout>

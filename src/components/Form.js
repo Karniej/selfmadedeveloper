@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react'
 
 const Form = () => {
-  const [textInputValue, setTextInputValue] = useState('')
+  const [state, setState] = useState({
+    name: '',
+    email: ''
+  })
   const [formVisibility, setFormVisibility] = useState(true)
   const [isLoading, setLoading] = useState(false)
+  const { name, email } = state
+  console.log('email: ', email)
 
+  console.log('name: ', name)
   let form = null
 
   useEffect(() => {
@@ -17,20 +23,27 @@ const Form = () => {
 
   const handleSubmit = () => {
     setLoading(true)
+    if (name.length || email.lenght > 0) {
+      fetch(form.action, {
+        method: form.method,
+        body: new FormData(form)
+      }).then(res => {
+        console.log('res: ', res)
+        setLoading(false)
 
-    fetch(form.action, {
-      method: form.method,
-      body: new FormData(form)
-    }).then(res => {
-      console.log('res: ', res)
-      setLoading(false)
-
-      if (res.status === 200) {
-        setFormVisibility(false)
-      }
-    })
+        if (res.status === 200) {
+          setFormVisibility(false)
+        }
+      })
+    }
   }
-  const handleChange = e => setTextInputValue(e.target.value)
+  const handleChangeName = e => {
+    setState({ name: e.target.value, email })
+  }
+
+  const handleChangeEmail = e => {
+    setState({ email: e.target.value, name })
+  }
 
   return (
     <div className="columns section">
@@ -61,15 +74,24 @@ const Form = () => {
               style={{ display: formVisibility ? 'flex' : 'none' }}
             >
               <div className="field column">
+                <input
+                  type="text"
+                  className="form-control input is-black"
+                  name="fields[name]"
+                  value={name}
+                  placeholder="Name"
+                  onChange={handleChangeName}
+                />
+              </div>
+              <div className="field column">
                 <div className={`control ${isLoading ? 'is-loading' : ''}`}>
                   <input
                     type="email"
                     className="form-control input is-black"
-                    data-inputmask=""
                     name="fields[email]"
-                    value={textInputValue}
+                    value={email}
                     placeholder="Email"
-                    onChange={handleChange}
+                    onChange={handleChangeEmail}
                   />
                 </div>
               </div>
