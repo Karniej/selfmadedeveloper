@@ -30,22 +30,22 @@ const Form = () => {
         method: form.method,
         body: new FormData(form),
       }).then(res => {
-        console.log('res: ', res)
         setLoading(false)
 
         if (res.status === 200) {
           setFormVisibility(false)
+          setErrorVisibility({text:"", isVisible: false})
         }
       })
     }
     if (!isNameValid) {
       setErrorVisibility({
-        text: 'Name contains invalid characters. Please use only letters',
+        text: 'Your name contains invalid characters, please use only letters.',
         isVisible: true,
       })
     }
     if (!isValidEmail) {
-      setErrorVisibility({ text: 'Email has invalid format.', isVisible: true })
+      setErrorVisibility({ text: 'Your email has invalid format.', isVisible: true })
     }
   }
   const handleChangeName = e => {
@@ -93,7 +93,7 @@ const Form = () => {
               className="form-error"
               style={{ opacity: error.isVisible ? 1 : 0 }}
             >
-              Your name and email is required in order to subscribe.
+              {error.text}
             </p>
             <form
               id="form"
