@@ -169,6 +169,7 @@ $default-margin: 4em
   border: 2px solid
   border-radius: $border-radius
   border-color: $default-black
+  padding: 0.5rem
 
 .form-title
   text-transform: uppercase
@@ -197,5 +198,21 @@ $default-margin: 4em
   color: $default-black
   text-transform: uppercase
   font-family: 'Oswald', sans-serif
+
+.form-wrapper
+  justify-content: center
+
+.form-error
+  color: $primary
+  font-family: 'Oswald', sans-serif
+  letter-spacing: 0.5px
+  font-size: 11px
+  text-align: left
+  padding: 0px
+
+.ml-block-form
+  justify-content: flex-start
+  .field
+    padding-right: 0.75rem
 
 @import "~bulma"

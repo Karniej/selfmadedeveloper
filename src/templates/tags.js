@@ -29,7 +29,9 @@ class TagRoute extends React.Component {
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
-    const tagHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged “${tag}”`
+    const tagHeader = `${totalCount} post${
+      totalCount === 1 ? '' : 's'
+    } tagged “${tag}”`
 
     return (
       <Layout>
@@ -39,9 +41,11 @@ class TagRoute extends React.Component {
             <h2 className="subtitle tags-header">{tagHeader}</h2>
             <div className="posts-container">{postLinks}</div>
             <hr />
-             <span className="tag is-primary is-large">
-              <Link className="link" to="/tags/">Browse all tags</Link>
-              </span>
+            <span className="tag is-primary is-large">
+              <Link className="link" to="/tags/">
+                Browse all tags
+              </Link>
+            </span>
           </div>
         </section>
       </Layout>
