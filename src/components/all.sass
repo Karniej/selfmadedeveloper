@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600,700')
 
 // Config vars
-// Kalidi logo brand color: #FDBB0B
 $selfmadedeveloper-yellow: #FDBB0B
 $selfmadedeveloper-yellow-invert: #FFF
 $default-black: #0a0a0a
@@ -68,11 +67,24 @@ $default-margin: 4em
 .content-container
   padding-top: $default-margin
 
+.tags-header
+  padding: $default-margin/2 0
+  font-family: 'Oswald', sans-serif
+  text-transform: uppercase
+  margin-bottom: 0px !important
+  color: $default-black
+
+.taglist-container
+  margin-top: 3rem
+
+.taglist-header
+  font-family: 'Oswald', sans-serif
+  text-transform: uppercase
+
 .content .taglist
   list-style: none
   margin-bottom: 0
   margin-left: 0
-  margin-right: 1.5rem
   margin-top: 1.5rem
   display: flex
   flex-wrap: wrap
@@ -151,5 +163,56 @@ $default-margin: 4em
   font-family: 'Oswald', sans-serif
   padding-bottom: $default-margin/2
   margin-bottom: 0 !important
+
+.form-container
+  background-color: $default-black
+  border: 2px solid
+  border-radius: $border-radius
+  border-color: $default-black
+  padding: 0.5rem
+
+.form-title
+  text-transform: uppercase
+  font-family: 'Oswald', sans-serif
+  font-size: 20px
+  color: $primary-invert
+
+.form-subtitle
+  font-family: 'Oswald', sans-serif
+  color: $primary
+
+.footer
+  background-color: $default-black !important
+  padding: 0 !important
+
+.footer .copyright
+  text-transform: uppercase
+  letter-spacing: 0.6px
+  font-family: 'Oswald', sans-serif
+  font-size: 12px
+  text-align: center
+  color: $primary
+  padding-bottom: 12px
+
+.link
+  color: $default-black
+  text-transform: uppercase
+  font-family: 'Oswald', sans-serif
+
+.form-wrapper
+  justify-content: center
+
+.form-error
+  color: $primary
+  font-family: 'Oswald', sans-serif
+  letter-spacing: 0.5px
+  font-size: 11px
+  text-align: left
+  padding: 0px
+
+.ml-block-form
+  justify-content: flex-start
+  .field
+    padding-right: 0.75rem
 
 @import "~bulma"

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Form from '../components/Form'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -11,7 +12,8 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section className="section">
-          <div className="container content-container">
+          <Form />
+          <div className="container ">
             <div className="posts-container">
               {posts.map(({ node: post }) => (
                 <a

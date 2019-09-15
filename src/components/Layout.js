@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Navbar from '../components/Navbar'
+import Form from '../components/Form'
 import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
@@ -44,6 +45,10 @@ const TemplateWrapper = ({ children }) => (
         </Helmet>
         <Navbar />
         <div>{children}</div>
+        <footer className="footer">
+          <Form />
+          <p className="copyright">© Copyright 2019 Pawel Karniej</p>
+        </footer>
       </div>
     )}
   />
