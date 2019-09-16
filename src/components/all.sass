@@ -169,7 +169,7 @@ $default-margin: 4em
   border: 2px solid
   border-radius: $border-radius
   border-color: $default-black
-  padding: 0.5rem
+  margin: 2rem 0px !important
 
 .form-title
   text-transform: uppercase
@@ -210,8 +210,14 @@ $default-margin: 4em
   text-align: left
   padding: 0px
 
+.top-form-container
+  // padding: 2rem 0px
+
 .ml-block-form
   justify-content: flex-start
+  @media screen and (max-width: $break-small)
+    flex-direction: column
+
   .field
     padding-right: 0.75rem
 
