@@ -22,7 +22,7 @@ export const BlogPostTemplate = ({
       <div className="container content content-container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h2 className="is-size-3 blog-post-title">{title}</h2>
+            <h2 className="blog-post-title">{title}</h2>
             <PostContent content={content} />
             <hr />
             {tags && tags.length ? (
