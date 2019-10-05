@@ -13,7 +13,7 @@ tags:
 
 # How to start learning programming
 
-I receive that question on my [Instagram](https://www.instagram.com/selfmadedeveloper/) almost everyday. I've been sending people to read **my story** of [how I became a developer](https://selfmadedeveloper.com/how-i-became-selfmade-developer/), because I thought that my example is a quite good one to follow, but there are a few **more things** to consider than in my first post on this blog. That's why I decided to write **more-like-guide article**.
+I receive that question on my [Instagram](https://www.instagram.com/selfmadedeveloper/) almost everyday. I've been sending people to read **my story** of [how I became a developer](https://selfmadedev.com/how-i-became-selfmade-developer/), because I thought that my example is a quite good one to follow, but there are a few **more things** to consider than in my first post on this blog. That's why I decided to write **more-like-guide article**.
 
 ## **There are many ways to become a developer.**
 
