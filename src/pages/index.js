@@ -1,33 +1,29 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+import Form from '../components/Form'
 
 export default class IndexPage extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
       <Layout>
         <section className="section">
-          <div className="container content-container">
+          <Form />
+          <div className="container ">
             <div className="posts-container">
               {posts.map(({ node: post }) => (
-                <a
-                  href={post.fields.slug}
-                  key={post.id}
-                  className="post-container"
-                >
+                <a href={post.fields.slug} key={post.id} className="post-container">
                   <div className="post">
                     <h1 className="post-title">{post.frontmatter.title}</h1>
                     <figure className="image is-centered">
                       <img
                         className="post-thumbnail"
                         alt="post thumbnail"
-                        src={
-                          post.frontmatter.thumbnail.childImageSharp.fluid.src
-                        }
+                        src={post.frontmatter.thumbnail.childImageSharp.fluid.src}
                       />
                     </figure>
                     <p>{post.excerpt}</p>
@@ -39,7 +35,7 @@ export default class IndexPage extends React.Component {
           </div>
         </section>
       </Layout>
-    );
+    )
   }
 }
 
@@ -49,7 +45,7 @@ IndexPage.propTypes = {
       edges: PropTypes.array
     })
   })
-};
+}
 
 export const pageQuery = graphql`
   query IndexQuery {
@@ -80,4 +76,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

@@ -4,7 +4,7 @@ path: /about
 title: Who am I
 ---
 
-My name is **Paweł Karniej** and less than 2 years ago I made a promise to myself that I'll become a software developer. I kept my promise and since **January 2018** I am working as a **React Native Developer**. I love every aspect of it and it totally changed my life, that's why I want share my journey from how it all started to  wherever it will take me.
+My name is **Paweł Karniej** and in November 2017 I made a promise to myself that I'll become a software developer. I kept my promise and since **January 2018** I am working as a **React Native Developer**. I love every aspect of it and it totally changed my life, that's why I want share my journey from how it all started to  wherever it will take me.
 
 There are quite a few great blogs from programmers out there, but every one which I know was created by CS students and people who has been doing programming for a long time.
 
