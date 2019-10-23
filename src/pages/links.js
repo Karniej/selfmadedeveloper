@@ -21,11 +21,16 @@ class LinksRoute extends React.Component {
             <img alt="selfmade developer logo" src={logo} />
           </Link>
           <figure className="image is-128x128">
-            <img alt="selfmade developer logo" src={me} className="is-rounded" />
+            <img
+              alt="selfmade developer logo"
+              src={me}
+              className="is-rounded"
+            />
           </figure>
           <h1 className="links-title">Pawel Karniej</h1>
           <p className="links-paragraph">
-            <span className="colored">React Native </span>developer <br /> working
+            <span className="colored">React Native </span>developer <br />{' '}
+            working
             <span className="colored"> remotely</span>
           </p>
           <hr />
