@@ -220,9 +220,6 @@ $default-margin: 4em
   text-align: left
   padding: 0px
 
-.top-form-container
-  // padding: 2rem 0px
-
 .ml-block-form
   justify-content: flex-start
   @media screen and (max-width: $break-small)
@@ -245,6 +242,11 @@ $default-margin: 4em
     height: 1px
   .icons-container a
       padding: 1rem
+  .links-articles-container
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
 
 
 .links-title
@@ -272,16 +274,24 @@ $default-margin: 4em
   @media screen and (max-width: $break-small)
     width: 70%
 
-.links-article-container
+.links-articles-container
   display: flex
   flex-direction: row;
-  align-items: center
-  img
-    height: 7.5%
-    width: 7.5%
+  a
+    display: flex
+    flex-direction: row;
+    align-items: center
+    width: 100%
+    padding: 0.25rem 0
+    height: 100%
+    img
+      height: auto
+      width: 5%
+      @media screen and (max-width: $break-small)
+        width: 10%
   .links-paragraph
     font-size: 0.75rem
-    text-align: left
     padding-left: 1rem
+    text-align: left
 
 @import "~bulma"

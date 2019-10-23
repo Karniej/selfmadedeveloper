@@ -21,52 +21,43 @@ class LinksRoute extends React.Component {
             <img alt="selfmade developer logo" src={logo} />
           </Link>
           <figure className="image is-128x128">
-            <img
-              alt="selfmade developer logo"
-              src={me}
-              className="is-rounded"
-            />
+            <img alt="selfmade developer logo" src={me} className="is-rounded" />
           </figure>
           <h1 className="links-title">Pawel Karniej</h1>
           <p className="links-paragraph">
-            <span className="colored">React Native </span>developer <br />{' '}
-            working
+            <span className="colored">React Native </span>developer <br /> working
             <span className="colored"> remotely</span>
           </p>
           <hr />
           <p className="links-paragraph">
             Latest <span className="colored">articles </span>
           </p>
-          <a
-            href="https://blog.logrocket.com/designing-a-ui-with-custom-theming-using-react-native-paper/"
-            id="logrocket"
-          >
-            <div className="links-article-container">
+          <div className="links-articles-container">
+            <a
+              href="https://blog.logrocket.com/designing-a-ui-with-custom-theming-using-react-native-paper/"
+              id="logrocket"
+            >
               <img className="logrocket" alt="logrocket logo" src={logrocket} />
               <p className="links-paragraph">
                 Designing a UI with custom theming using
                 <span className="colored"> react-native-paper </span>
               </p>
-            </div>
-          </a>
-          <Link to="/blog/2019-10/2019-10.23-learning-react-native/">
-            <div className="links-article-container">
+            </a>
+            <Link to="/blog/2019-10/2019-10.23-learning-react-native/">
               <img id="selfmadedev" alt="selfmadev logo" src={selfmadedev} />
               <p className="links-paragraph">
                 Learning
                 <span className="colored"> React Native</span>
               </p>
-            </div>
-          </Link>
-          <a href="https://blog.logrocket.com/how-to-make-tinder-like-card-animations-with-react-native/">
-            <div className="links-article-container">
+            </Link>
+            <a href="https://blog.logrocket.com/how-to-make-tinder-like-card-animations-with-react-native/">
               <img className="logrocket" alt="logrocket logo" src={logrocket} />
               <p className="links-paragraph">
                 How to make Tinder-like card animations with
                 <span className="colored"> React Native</span>
               </p>
-            </div>
-          </a>
+            </a>
+          </div>
 
           <div className="icons-container">
             <a href="https://twitter.com/pawe_kar">
