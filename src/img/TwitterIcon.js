@@ -2,7 +2,12 @@ import React from 'react'
 import { string } from 'prop-types'
 
 const TwitterIcon = ({ fill }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="26"
+    height="26"
+    viewBox="0 0 24 24"
+  >
     <g>
       <path
         id="twitter"
@@ -14,11 +19,11 @@ const TwitterIcon = ({ fill }) => (
 )
 
 TwitterIcon.propTypes = {
-  fill: string
+  fill: string,
 }
 
 TwitterIcon.defaultProps = {
-  fill: '#FFF'
+  fill: '#FFF',
 }
 
 export default TwitterIcon

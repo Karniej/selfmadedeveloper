@@ -8,22 +8,28 @@ const TagsPage = ({
   data: {
     allMarkdownRemark: { group },
     site: {
-      siteMetadata: { title }
-    }
-  }
+      siteMetadata: { title },
+    },
+  },
 }) => (
   <Layout>
     <section className="section">
       <Helmet title={`Tags | ${title}`} />
       <div className="container content content-container">
         <div className="columns">
-          <div className="column is-10 is-offset-1" style={{ marginBottom: '6rem' }}>
+          <div
+            className="column is-10 is-offset-1"
+            style={{ marginBottom: '6rem' }}
+          >
             <h2 className="blog-post-title">Tags</h2>
             <ul className="taglist">
               {group.map(tag => (
                 <li key={tag.fieldValue}>
                   <span className="tag is-primary">
-                    <Link className="link" to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+                    <Link
+                      className="link"
+                      to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                    >
                       {tag.fieldValue} ({tag.totalCount})
                     </Link>
                   </span>

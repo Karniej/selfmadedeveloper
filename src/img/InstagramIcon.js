@@ -20,11 +20,11 @@ const InstagramIcon = ({ fill }) => (
 )
 
 InstagramIcon.propTypes = {
-  fill: string
+  fill: string,
 }
 
 InstagramIcon.defaultProps = {
-  fill: '#FFF'
+  fill: '#FFF',
 }
 
 export default InstagramIcon

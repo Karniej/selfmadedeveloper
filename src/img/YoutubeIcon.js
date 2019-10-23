@@ -20,11 +20,11 @@ const YoutubeIcon = ({ fill }) => (
 )
 
 YoutubeIcon.propTypes = {
-  fill: string
+  fill: string,
 }
 
 YoutubeIcon.defaultProps = {
-  fill: '#FFF'
+  fill: '#FFF',
 }
 
 export default YoutubeIcon

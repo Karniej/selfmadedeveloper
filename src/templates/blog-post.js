@@ -13,7 +13,7 @@ export const BlogPostTemplate = ({
   tags,
   title,
   helmet,
-  thumbnail
+  thumbnail,
 }) => {
   const PostContent = contentComponent || Content
   console.log('thumbnail: ', thumbnail)
@@ -25,7 +25,11 @@ export const BlogPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <figure className="image is-centered">
-              <img className="post-inside-thumbnail" alt="post thumbnail" src={thumbnail} />
+              <img
+                className="post-inside-thumbnail"
+                alt="post thumbnail"
+                src={thumbnail}
+              />
             </figure>
             <h2 className="blog-post-title">{title}</h2>
             <PostContent content={content} />
@@ -58,7 +62,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object
+  helmet: PropTypes.object,
 }
 
 const BlogPost = ({ data }) => {
@@ -74,7 +78,10 @@ const BlogPost = ({ data }) => {
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta name="description" content={`${post.frontmatter.description}`} />
+            <meta
+              name="description"
+              content={`${post.frontmatter.description}`}
+            />
           </Helmet>
         }
         thumbnail={post.frontmatter.thumbnail.childImageSharp.fluid.src}
@@ -87,8 +94,8 @@ const BlogPost = ({ data }) => {
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object
-  })
+    markdownRemark: PropTypes.object,
+  }),
 }
 
 export default BlogPost
