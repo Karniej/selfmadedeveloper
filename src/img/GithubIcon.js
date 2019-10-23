@@ -23,11 +23,11 @@ const GithubIcon = ({ fill }) => (
 )
 
 GithubIcon.propTypes = {
-  fill: string
+  fill: string,
 }
 
 GithubIcon.defaultProps = {
-  fill: '#FFF'
+  fill: '#FFF',
 }
 
 export default GithubIcon
