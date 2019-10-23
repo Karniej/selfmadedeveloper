@@ -23,15 +23,7 @@ $default-margin: 4em
   transition: 0.3s
   font-family: 'Lato', sans-serif
 
-html, body
-  height: 100%
-
 .layout
-  height: 100%
-
-#___gatsby
-  height: 100%
-#gatsby-focus-wrapper
   height: 100%
 
 .navbar .navbar-menu
@@ -246,13 +238,19 @@ html, body
   flex-direction: column
   align-items: center
   height: 100%
+  hr
+    width: 100%
+    background-color: $primary
+    margin: 0.25rem 0
+    height: 1px
   .icons-container a
       padding: 1rem
+
 
 .links-title
   padding: 1rem 0
   color: $primary-invert
-  font-size: 1.7rem
+  font-size: 1.5rem
   text-align: center
   text-transform: uppercase
 
@@ -273,5 +271,17 @@ html, body
     width: 50%
   @media screen and (max-width: $break-small)
     width: 70%
+
+.links-article-container
+  display: flex
+  flex-direction: row;
+  align-items: center
+  img
+    height: 7.5%
+    width: 7.5%
+  .links-paragraph
+    font-size: 0.75rem
+    text-align: left
+    padding-left: 1rem
 
 @import "~bulma"

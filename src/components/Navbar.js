@@ -32,11 +32,19 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar is-black is-fixed-top" role="navigation" aria-label="main-navigation">
+      <nav
+        className="navbar is-black is-fixed-top"
+        role="navigation"
+        aria-label="main-navigation"
+      >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img alt="selfmade developer logo" src={logo} className="hero-logo" />
+              <img
+                alt="selfmade developer logo"
+                src={logo}
+                className="hero-logo"
+              />
             </Link>
             {/* Hamburger menu */}
             <div className="navbar-burger burger" data-target="navMenu">
@@ -47,10 +55,18 @@ class Navbar extends React.Component {
           </div>
           <div id="navMenu" className="navbar-menu ">
             <div className="navbar-start has-text-centered ">
-              <Link className="navbar-item" activeStyle={{ color: '#FDBB0B' }} to="/">
+              <Link
+                className="navbar-item"
+                activeStyle={{ color: '#FDBB0B' }}
+                to="/"
+              >
                 Home
               </Link>
-              <Link className="navbar-item" activeStyle={{ color: '#FDBB0B' }} to="/about">
+              <Link
+                className="navbar-item"
+                activeStyle={{ color: '#FDBB0B' }}
+                to="/about"
+              >
                 About me
               </Link>
               <Link
@@ -84,7 +100,11 @@ class Navbar extends React.Component {
             </div>
             <div className="navbar-end">
               <div className="icons-container">
-                <a href="https://twitter.com/pawe_kar" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://twitter.com/pawe_kar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <span className="icon">
                     <TwitterIcon />
                   </span>
