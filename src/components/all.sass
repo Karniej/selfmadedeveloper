@@ -23,6 +23,9 @@ $default-margin: 4em
   transition: 0.3s
   font-family: 'Lato', sans-serif
 
+html, body
+  height: 100%
+
 .navbar .navbar-menu
   box-shadow:none !important
   background-color: $default-black
@@ -228,6 +231,11 @@ $default-margin: 4em
   .field
     padding-right: 0.75rem
 
+#___gatsby
+  height: 100%
+#gatsby-focus-wrapper
+  height: 100%
+
 .links-page
   background-color: $default-black
   display: flex
@@ -235,6 +243,8 @@ $default-margin: 4em
   flex-direction: column
   align-items: center
   height: 100%
+  .icons-container a
+      padding: 1rem
 
 .links-title
   padding: 1rem 0
@@ -253,13 +263,15 @@ $default-margin: 4em
     color: $primary
 
 .links-Logo
-  width: 50%
+  width: 30%
   height: auto
   padding: 1rem 0
   align-items: center
   #logrocket
     width: 35%
-  @media screen and (max-width: $break-small)
+  @media screen and (max-width: $break-medium)
     width: 60%
+  @media screen and (max-width: $break-small)
+    width: 70%
 
 @import "~bulma"

@@ -42,41 +42,39 @@ class LinksRoute extends React.Component {
         >
           <img alt="logrocket logo" src={logrocket} />
         </a>
-        <div className="navbar-end">
-          <div className="icons-container">
-            <a href="https://twitter.com/pawe_kar" target="_blank" rel="noopener noreferrer">
-              <span className="icon">
-                <TwitterIcon fill="#FDBB0B" />
-              </span>
-            </a>
-            <a
-              href="https://www.instagram.com/selfmadedeveloper/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="icon">
-                <InstagramIcon fill="#FDBB0B" />
-              </span>
-            </a>
-            <a
-              href="https://github.com/Karniej/selfmadedeveloper"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="icon">
-                <GithubIcon />
-              </span>
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCZFNvtnHjY_8pIEQmD16qiA"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="icon">
-                <YoutubeIcon />
-              </span>
-            </a>
-          </div>
+        <div className="icons-container">
+          <a href="https://twitter.com/pawe_kar" target="_blank" rel="noopener noreferrer">
+            <span className="icon">
+              <TwitterIcon fill="#FDBB0B" />
+            </span>
+          </a>
+          <a
+            href="https://www.instagram.com/selfmadedeveloper/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="icon">
+              <InstagramIcon fill="#FDBB0B" />
+            </span>
+          </a>
+          <a
+            href="https://github.com/Karniej/selfmadedeveloper"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="icon">
+              <GithubIcon />
+            </span>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCZFNvtnHjY_8pIEQmD16qiA"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="icon">
+              <YoutubeIcon />
+            </span>
+          </a>
         </div>
       </div>
     )
