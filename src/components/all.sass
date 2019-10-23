@@ -23,6 +23,9 @@ $default-margin: 4em
   transition: 0.3s
   font-family: 'Lato', sans-serif
 
+html, body
+  height: 100%
+
 .navbar .navbar-menu
   box-shadow:none !important
   background-color: $default-black
@@ -227,5 +230,48 @@ $default-margin: 4em
 
   .field
     padding-right: 0.75rem
+
+#___gatsby
+  height: 100%
+#gatsby-focus-wrapper
+  height: 100%
+
+.links-page
+  background-color: $default-black
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+  height: 100%
+  .icons-container a
+      padding: 1rem
+
+.links-title
+  padding: 1rem 0
+  color: $primary-invert
+  font-size: 1.7rem
+  text-align: center
+  text-transform: uppercase
+
+.links-paragraph
+  color: $primary-invert
+  padding-bottom: 0.2rem
+  font-size: 1rem
+  text-align: center
+  text-transform: uppercase
+  .colored
+    color: $primary
+
+.links-Logo
+  width: 30%
+  height: auto
+  padding: 1rem 0
+  align-items: center
+  #logrocket
+    width: 35%
+  @media screen and (max-width: $break-medium)
+    width: 60%
+  @media screen and (max-width: $break-small)
+    width: 70%
 
 @import "~bulma"
