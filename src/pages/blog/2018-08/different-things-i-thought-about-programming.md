@@ -22,7 +22,7 @@ ___
 
 ## **Programming is hard**
 
-When <a href="https://selfmadedev.com/programming-learn-it-by-yourself-part-1/">I started learning programming</a>, I initially thought that it **isn't that hard**. The more I work the more aware i am of that programming **is really hard** and I understand why programmers are getting paid well. I thought it's easier than it actually is. I don't know why I thought this way, maybe because I liked it from the beginning? The brain stretch I missed in my last job was an amazing think, I felt that I am thinking clearer everyday.
+When <a href="https://selfmadedev.com/blog/2018/07/programming-learn-it-by-yourself-part-1/">I started learning programming</a>, I initially thought that it **isn't that hard**. The more I work the more aware i am of that programming **is really hard** and I understand why programmers are getting paid well. I thought it's easier than it actually is. I don't know why I thought this way, maybe because I liked it from the beginning? The brain stretch I missed in my last job was an amazing think, I felt that I am thinking clearer everyday.
 
 At the beginning of my learning, my general knowledge of concepts was quite ok, but there's a long long way between this and actually mastering a certain programming skill.
 I feel like  I just learned quite quickly basic concepts and the progress was fast. I also hated my previous job badly so I had an enormous motivation to learn every day.

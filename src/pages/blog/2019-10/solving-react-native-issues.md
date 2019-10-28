@@ -55,4 +55,4 @@ ___
 
 That would be it for my ideas about solving React Native issues, I think they are more versatile add not only specific to React Native so you can make use of them while writing other types of applications in every programming launguage.
 
-P.S. I would also add another debugging technique called Rubber-ducking to this list, but I described it in another post and you can read it [here](https://selfmadedev.com/blog/2019-09/2019-09-02-rubber-duck-debugging/).
+P.S. I would also add another debugging technique called Rubber-ducking to this list, but I described it in another post and you can read it [here](https://selfmadedev.com/blog/2019-09/rubber-duck-debugging/).

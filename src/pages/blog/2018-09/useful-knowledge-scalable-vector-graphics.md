@@ -10,7 +10,7 @@ tags:
 
 # SVG
 
-The most important thing to get you in front of the doors to your first job I described in this series [programming-learn-it-by-yourself](https://selfmadedev.com//blog/2018-07-02-programming-learn-it-by-yourself-part-1/) , but that isn't where it ends. There are tons of other stuff to learn and as I learned on the job, there are more **often** used for Web and Mobile developers than I thought.
+The most important thing to get you in front of the doors to your first job I described in this series [programming-learn-it-by-yourself](https://selfmadedev.com/blog/2018-07/programming-learn-it-by-yourself-part-1/) , but that isn't where it ends. There are tons of other stuff to learn and as I learned on the job, there are more **often** used for Web and Mobile developers than I thought.
 
 One of this things is **SVG** format. As a Web or Mobile developer, you'll encounter using SVG on the daily basis and it's getting more and more **popular** every day.
 
