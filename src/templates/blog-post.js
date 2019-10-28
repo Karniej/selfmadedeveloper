@@ -10,13 +10,13 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
+  date,
   tags,
   title,
   helmet,
-  thumbnail,
+  thumbnail
 }) => {
   const PostContent = contentComponent || Content
-  console.log('thumbnail: ', thumbnail)
 
   return (
     <section className="section blog-post-container">
@@ -25,14 +25,11 @@ export const BlogPostTemplate = ({
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <figure className="image is-centered">
-              <img
-                className="post-inside-thumbnail"
-                alt="post thumbnail"
-                src={thumbnail}
-              />
+              <img className="post-inside-thumbnail" alt="post thumbnail" src={thumbnail} />
             </figure>
             <h2 className="blog-post-title">{title}</h2>
             <PostContent content={content} />
+            <p className="post-date">{date}</p>
             <hr />
             {tags && tags.length ? (
               <div className="taglist-container">
@@ -62,12 +59,11 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object,
+  helmet: PropTypes.object
 }
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data
-  console.log('data: ', data)
 
   return (
     <Layout>
@@ -78,15 +74,13 @@ const BlogPost = ({ data }) => {
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
+            <meta name="description" content={`${post.frontmatter.description}`} />
           </Helmet>
         }
         thumbnail={post.frontmatter.thumbnail.childImageSharp.fluid.src}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        date={post.frontmatter.date}
       />
     </Layout>
   )
@@ -94,8 +88,8 @@ const BlogPost = ({ data }) => {
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
+    markdownRemark: PropTypes.object
+  })
 }
 
 export default BlogPost

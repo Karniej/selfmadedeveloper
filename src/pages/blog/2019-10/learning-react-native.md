@@ -20,7 +20,7 @@ First and foremost, I started learning this framework 2+ years ago. It looked an
 Nowadays, I'm learning a new part of the framework whenever I need it in the apl I'm building.
 Most of the times I'm using awesome official React Native document for it.
 
-In a [introduction post](https://selfmadedev.com/blog/2018-07/2018-07-01-hello-world/) I opened this blog last year.
+In a [introduction post](https://selfmadedev.com/blog/2018-07/hello-world/) I opened this blog last year.
 i wrote last year. I recommend a few great sources for learning JavaScript and React framework. Those are necessary prerequisites to start learning and using React Native.
 
 Now, there's a ton of great knowledge available to learn React Native. I myself try to contribute to sharing this knowledge by writing Instagram posts and articles for blog.

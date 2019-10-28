@@ -23,7 +23,7 @@ Also when you dive deep in some area of **programming**, you'll get to know the 
 
 ## **1. Diving deeper into React**
 
-In [the second part](https://selfmadedev.com/blog/2018-07-23-programming-learn-it-by-yourself-part-2/) of this series, I shared a few links about **free courses** for learning React. I forgot to mention the most **obvious** place for **learning** **React** , which is [official documentation](https://reactjs.org/) page. **The docs** are blazingly fast and amazingly helpful in learning this awesome technology.
+In [the second part](https://selfmadedev.com/blog/2018-07/programming-learn-it-by-yourself-part-2/) of this series, I shared a few links about **free courses** for learning React. I forgot to mention the most **obvious** place for **learning** **React** , which is [official documentation](https://reactjs.org/) page. **The docs** are blazingly fast and amazingly helpful in learning this awesome technology.
 
 Those courses and official documentation are the courses which helped me to learn enough to get a job. I don't know how the **job market** looks at your country, because it's probably a little bit **different** everywhere. Also everyone is a little bit different and learns in a different pace and way.
 
