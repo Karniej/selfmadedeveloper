@@ -9,8 +9,6 @@ tags:
   - react
 ---
 
->I decided that I'll repost all education-related posts from my [Instagram](https://www.instagram.com/selfmadedeveloper/) here, so it won't get lost in the feed of beautiful pictures.
-
 ## Post
 
 I've seen more and more mentions about TypeScript during last year and almost everyone who tried it, never went back to writing regular JS, so I decided that I have to take my time and learn it.
