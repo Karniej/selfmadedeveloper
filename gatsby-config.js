@@ -75,6 +75,13 @@ module.exports = {
         // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     }, // must be after other CSS plugins
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-119263683-2",
+      },
+    },
     'gatsby-plugin-netlify' // make sure to keep it last in the array
   ]
 }
