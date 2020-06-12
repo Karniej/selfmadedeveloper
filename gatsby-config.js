@@ -82,6 +82,12 @@ module.exports = {
         trackingId: "UA-119263683-2",
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `selfmadedev`
+      }
+    },
     'gatsby-plugin-netlify' // make sure to keep it last in the array
   ]
 }
