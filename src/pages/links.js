@@ -21,11 +21,16 @@ class LinksRoute extends React.Component {
             <img alt="selfmade developer logo" src={logo} />
           </Link>
           <figure className="image is-128x128">
-            <img alt="selfmade developer logo" src={me} className="is-rounded" />
+            <img
+              alt="selfmade developer logo"
+              src={me}
+              className="is-rounded"
+            />
           </figure>
           <h1 className="links-title">Pawel Karniej</h1>
           <p className="links-paragraph">
-            <span className="colored">React Native </span>developer <br /> working
+            <span className="colored">React Native </span>developer <br />{' '}
+            working
             <span className="colored"> remotely</span>
           </p>
           <hr />
@@ -33,6 +38,16 @@ class LinksRoute extends React.Component {
             Latest <span className="colored">articles </span>
           </p>
           <div className="links-articles-container">
+            <a
+              href="https://blog.logrocket.com/choosing-the-right-react-native-date-picker/"
+              id="logrocket"
+            >
+              <img className="logrocket" alt="logrocket logo" src={logrocket} />
+              <p className="links-paragraph">
+                Choosing the right
+                <span className="colored"> React Native datepicker</span>
+              </p>
+            </a>
             <a
               href="https://blog.logrocket.com/designing-a-ui-with-custom-theming-using-react-native-paper/"
               id="logrocket"
