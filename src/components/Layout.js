@@ -53,7 +53,9 @@ const TemplateWrapper = ({
         {shouldRenderFooter && (
           <footer className="footer">
             <Form />
-            <p className="copyright">© Copyright 2019 Pawel Karniej</p>
+            <div className="container">
+              <p className="copyright">© Copyright 2020 Paweł Karniej</p>
+            </div>
           </footer>
         )}
       </div>

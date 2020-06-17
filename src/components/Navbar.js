@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/selfmadedeveloper.png'
+import logo from '../img/pageLogo.png'
 import InstagramIcon from '../img/InstagramIcon'
 import GithubIcon from '../img/GithubIcon'
 import TwitterIcon from '../img/TwitterIcon'
@@ -37,106 +37,106 @@ class Navbar extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img
-                alt="selfmade developer logo"
-                src={logo}
-                className="hero-logo"
-              />
-            </Link>
-            {/* Hamburger menu */}
-            <div className="navbar-burger burger" data-target="navMenu">
-              <span />
-              <span />
-              <span />
-            </div>
+        <div className="navbar-brand">
+          <Link to="/" title="Logo">
+            <img
+              alt="selfmade developer logo"
+              src={logo}
+              className="navbar-item"
+              width="156"
+              height="56"
+            />
+          </Link>
+          {/* Hamburger menu */}
+          <div className="navbar-burger burger" data-target="navMenu">
+            <span />
+            <span />
+            <span />
           </div>
-          <div id="navMenu" className="navbar-menu ">
-            <div className="navbar-start has-text-centered ">
-              <Link
-                className="navbar-item"
-                activeStyle={{ color: '#FDBB0B' }}
-                to="/"
+        </div>
+        <div id="navMenu" className="navbar-menu ">
+          <div className="navbar-start has-text-centered">
+            <Link
+              className="navbar-item"
+              activeStyle={{ color: '#FDBB0B' }}
+              to="/"
+            >
+              Home
+            </Link>
+            <Link
+              className="navbar-item"
+              activeStyle={{ color: '#FDBB0B' }}
+              to="/about"
+            >
+              About me
+            </Link>
+            <Link
+              className="navbar-item"
+              activeStyle={{ color: '#FDBB0B' }}
+              to="/tags/react-native/"
+            >
+              React Native
+            </Link>
+            <Link
+              className="navbar-item"
+              activeStyle={{ color: '#FDBB0B' }}
+              to="/tags/javascript"
+            >
+              JavaScript
+            </Link>
+            <Link
+              className="navbar-item"
+              activeStyle={{ color: '#FDBB0B' }}
+              to="/tags/out-of-scope/"
+            >
+              Out of Scope
+            </Link>
+            <Link
+              className="navbar-item"
+              activeStyle={{ color: '#FDBB0B' }}
+              to="/tags/learning-programming"
+            >
+              Learning Programming
+            </Link>
+          </div>
+          <div className="navbar-end">
+            <div className="icons-container">
+              <a
+                href="https://twitter.com/pawe_kar"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Home
-              </Link>
-              <Link
-                className="navbar-item"
-                activeStyle={{ color: '#FDBB0B' }}
-                to="/about"
+                <span className="icon">
+                  <TwitterIcon />
+                </span>
+              </a>
+              <a
+                href="https://www.instagram.com/selfmadedeveloper/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                About me
-              </Link>
-              <Link
-                className="navbar-item"
-                activeStyle={{ color: '#FDBB0B' }}
-                to="/tags/react-native/"
+                <span className="icon">
+                  <InstagramIcon />
+                </span>
+              </a>
+              <a
+                href="https://github.com/Karniej/selfmadedeveloper"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                React Native
-              </Link>
-              <Link
-                className="navbar-item"
-                activeStyle={{ color: '#FDBB0B' }}
-                to="/tags/javascript"
+                <span className="icon">
+                  <GithubIcon />
+                </span>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCZFNvtnHjY_8pIEQmD16qiA"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                JavaScript
-              </Link>
-              <Link
-                className="navbar-item"
-                activeStyle={{ color: '#FDBB0B' }}
-                to="/tags/out-of-scope/"
-              >
-                Out of Scope
-              </Link>
-              <Link
-                className="navbar-item"
-                activeStyle={{ color: '#FDBB0B' }}
-                to="/tags/learning-programming"
-              >
-                Learning Programming
-              </Link>
-            </div>
-            <div className="navbar-end">
-              <div className="icons-container">
-                <a
-                  href="https://twitter.com/pawe_kar"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon">
-                    <TwitterIcon />
-                  </span>
-                </a>
-                <a
-                  href="https://www.instagram.com/selfmadedeveloper/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon">
-                    <InstagramIcon />
-                  </span>
-                </a>
-                <a
-                  href="https://github.com/Karniej/selfmadedeveloper"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon">
-                    <GithubIcon />
-                  </span>
-                </a>
-                <a
-                  href="https://www.youtube.com/channel/UCZFNvtnHjY_8pIEQmD16qiA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span className="icon">
-                    <YoutubeIcon />
-                  </span>
-                </a>
-              </div>
+                <span className="icon">
+                  <YoutubeIcon />
+                </span>
+              </a>
             </div>
           </div>
         </div>
