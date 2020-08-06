@@ -132,8 +132,8 @@ const Form = () => {
               </div>
             </div>
             <div className="field">
-              <button type="submit" className="button is-primary">
-                <p className="post-container">Subscribe</p>
+              <button type="submit" className="button is-primary form-button">
+                Subscribe
               </button>
             </div>
           </form>
