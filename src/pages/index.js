@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
+import { kebabCase } from 'lodash'
 import Layout from '../components/Layout'
 import Form from '../components/Form'
+import Sidebar from '../components/Sidebar'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -11,32 +13,50 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="section">
+        <section className='section'>
           <Form />
-          <div className="container ">
-            <div className="posts-container">
-              {posts.map(({ node: post }) => (
-                <a
-                  href={post.fields.slug}
-                  key={post.id}
-                  className="post-container"
-                >
-                  <div className="post">
-                    <h1 className="post-title">{post.frontmatter.title}</h1>
-                    <figure className="image is-centered">
-                      <img
-                        className="post-thumbnail"
-                        alt="post thumbnail"
-                        src={
-                          post.frontmatter.thumbnail.childImageSharp.fluid.src
-                        }
-                      />
-                    </figure>
-                    <p>{post.excerpt}</p>
-                    <small className="post-date">{post.frontmatter.date}</small>
-                  </div>
-                </a>
-              ))}
+          <div className='container content content-container'>
+            <div className='columns'>
+              <div className='column'>
+                {posts.map(({ node: post }) => {
+                  return (
+                    <div key={post.id} className='post'>
+                      <a href={post.fields.slug}>
+                        <h1 className='post-title'>{post.frontmatter.title}</h1>
+                      </a>
+                      <a href={post.fields.slug}>
+                      <div className='post-inner'>
+                        <img
+                          className='post-thumbnail'
+                          alt='post thumbnail'
+                          src={post.frontmatter.thumbnail.childImageSharp.fluid.src}
+                        />
+                        <p className='post-excerpt'>{post.excerpt}</p>
+                      </div>
+                      </a>
+                      <div className='post-footer'>
+                        {post.frontmatter.tags && (
+                          <ul className='post-tags'>
+                            {post.frontmatter.tags.map((tag) => (
+                              <li key={tag + `tag`}>
+                                <span className='tag is-primary post-tag'>
+                                  <Link className='link' to={`/tags/${kebabCase(tag)}/`}>
+                                    # {tag}
+                                  </Link>
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                        <small className='post-date'>{post.frontmatter.date}</small>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+              <div className='column is-3'>
+                <Sidebar />
+              </div>
             </div>
           </div>
         </section>
@@ -77,6 +97,7 @@ export const pageQuery = graphql`
                 }
               }
             }
+            tags
           }
         }
       }

@@ -13,12 +13,15 @@ $primary-invert: $selfmadedeveloper-yellow-invert
 $navbar-item-color: $selfmadedeveloper-yellow-invert
 $navbar-item-hover-color: $selfmadedeveloper-yellow
 $navbar-item-active-color: $selfmadedeveloper-yellow
+$button-text-color: $default-black
 $break-small: 578px
 $break-medium: 900px
 $break-big: 1024px
 $break-large: 1200px
 $border-radius: 5px
 $default-margin: 4em
+$transformScale: scale(1.025)
+$fontOswald: 'Oswald', sans-serif
 
 *
   transition: 0.3s
@@ -38,7 +41,7 @@ body,
   background-color: $default-black
 
 .navbar-item
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
   text-transform: uppercase
   letter-spacing: 0.4px
 
@@ -82,7 +85,7 @@ body,
 
 .tags-header
   padding: $default-margin/2 0
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
   text-transform: uppercase
   margin-bottom: 0px !important
   color: $default-black
@@ -91,8 +94,13 @@ body,
   margin-top: 3rem
 
 .taglist-header
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
   text-transform: uppercase
+
+.tag-header
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
 
 .content .taglist
   list-style: none
@@ -127,49 +135,92 @@ body,
 
 .posts-container
   background-color: $selfmadedeveloper-yellow-invert
-  display: grid
-  grid-template-columns: repeat(4, 1fr)
-  grid-column-gap: 2em
-  grid-row-gap: 2em
-  @media screen and (max-width: $break-large)
-    grid-template-columns: repeat(3, 1fr)
-  @media screen and (max-width: $break-medium)
-    grid-template-columns: repeat(2, 1fr)
-  @media screen and (max-width: $break-small)
-    grid-template-columns: fit-content(100%)
 
-.post-container
-  color: $default-black
+.about-me-image
+  width: 15em
+  height: 15em
+  float: left
+  margin-right: 1em
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, .15)
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .15)
+  @media screen and (max-width: $break-small)
+    width: 10em
+    height: 10em
+
 
 .post
   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
   box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
-  padding: 2em
+  padding: 1em
   border-radius: $border-radius
   border-width: 0px
   background-color: $selfmadedeveloper-yellow-invert
-
-.post:hover
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
-    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  margin-bottom: 1em
+  padding-bottom: 1.5em
+  @media screen and (max-width: $break-small)
+    padding-bottom: 1em
 
 .post-title
   text-transform: uppercase
-  font-family: 'Oswald', sans-serif
-  font-size: 20px
+  font-family: $fontOswald
+  @media screen and (max-width: $break-small)
+    font-size: 24px !important
+
+.post-inner
+  flex-direction: row
+  padding-top: 0.5em
   color: $default-black
 
-.post-date
-  justify-content: flex-end
-  display: flex
-  padding-top: 1em
-
 .post-thumbnail
-  width: 100%
-  padding-top: 1em
-  padding-bottom: 1em
+  width: 6em
+  height: 6em
+  border-radius: $border-radius
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0 5px0px rgba(0, 0, 0, .15)
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  float: left
+  margin-right: 1em
+  @media screen and (max-width: $break-small)
+    margin-right: 0.5em
+
+.post-excerpt
+  padding-left: 1em
+  padding-right: 1em
+  @media screen and (max-width: $break-small)
+    padding-left: 0px
+    padding-right: 0px
+
+.post-tags
+  list-style: none !important
+  margin: 0px !important
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0px !important
+    padding-right: 0.75em
+
+.post-tag
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  @media screen and (max-width: $break-small)
+    margin-bottom: 0.5em
+
+.post-footer
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  flex-wrap: wrap
+  padding-top: 0.75em
+
+.post-date
+  padding-right: 1em
 
 .post-inside-thumbnail
   width: 45% !important
@@ -177,7 +228,7 @@ body,
 
 .blog-post-title
   text-transform: uppercase
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
   padding-bottom: $default-margin/2
   margin-bottom: 0 !important
 
@@ -190,12 +241,12 @@ body,
 
 .form-title
   text-transform: uppercase
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
   font-size: 20px
   color: $primary-invert
 
 .form-subtitle
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
   color: $primary
 
 .footer
@@ -205,7 +256,7 @@ body,
 .footer .copyright
   text-transform: uppercase
   letter-spacing: 0.6px
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
   font-size: 12px
   text-align: center
   color: $primary
@@ -214,14 +265,14 @@ body,
 .link
   color: $default-black
   text-transform: uppercase
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
 
 .form-wrapper
   justify-content: center
 
 .form-error
   color: $primary
-  font-family: 'Oswald', sans-serif
+  font-family: $fontOswald
   letter-spacing: 0.5px
   font-size: 11px
   text-align: left
@@ -236,24 +287,68 @@ body,
     padding-right: 0.75rem
 
 .links-page
+  border-radius: $border-radius
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .15)
   background-color: $default-black
   display: flex
   justify-content: space-evenly
   flex-direction: column
   align-items: center
   height: 100%
+  a
+    figure
+      img:hover
+        transform: $transformScale
+        -webkit-box-shadow: 0 2px 10px $primary
+        -moz-box-shadow: 0 2px 10px $primary
+        box-shadow: 0 2px 10px $primary
   hr
     width: 100%
     background-color: $primary
     margin: 0.25rem 0
     height: 1px
+  .setup-container
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    flex-direction: column
+    p
+      font-size: 0.75rem
+      text-align: left
+      width: 100%
   .icons-container a
       padding: 1rem
   .links-articles-container
     display: flex
-    justify-content: center
     align-items: center
+    justify-content: flex-start
     flex-direction: column
+    .links-paragraph
+      font-size: 0.75rem
+      padding-left: 1rem
+      text-align: left
+    a
+      display: flex
+      flex-direction: row;
+      align-items: center
+      width: 100%
+      padding: 0.25rem 0
+      height: 100%
+    a:hover
+      transform: $transformScale
+
+    img
+      height: auto
+      width: 10%
+      @media screen and (max-width: $break-small)
+        width: 10%
+
+.links-page:hover
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
 
 
 .links-title
@@ -262,6 +357,12 @@ body,
   font-size: 1.5rem
   text-align: center
   text-transform: uppercase
+  span.colored
+    color: $primary
+
+.setup
+  text-align: left
+  margin-left: 0px
 
 .links-paragraph
   color: $primary-invert
@@ -280,26 +381,6 @@ body,
     width: 50%
   @media screen and (max-width: $break-small)
     width: 70%
-
-.links-articles-container
-  display: flex
-  flex-direction: row;
-  a
-    display: flex
-    flex-direction: row;
-    align-items: center
-    width: 100%
-    padding: 0.25rem 0
-    height: 100%
-    img
-      height: auto
-      width: 5%
-      @media screen and (max-width: $break-small)
-        width: 10%
-  .links-paragraph
-    font-size: 0.75rem
-    padding-left: 1rem
-    text-align: left
 
 .navbar-logo
   max-width: 30%
@@ -323,5 +404,15 @@ body,
    width: 13%
   @media screen and (max-width: $break-small)
    width: 20%
+
+.sidebar:hover
+  transform: skewX(-5deg)
+  transform: rotateX(5deg)
+
+.form-button
+  color: $default-black !important
+  font-family: $fontOswald !important
+  text-transform: uppercase
+
 
 @import "~bulma"
