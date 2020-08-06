@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import { kebabCase } from 'lodash'
 import Layout from '../components/Layout'
-import Sidebar from '../components/SideBar'
+import Sidebar from '../components/Sidebar'
 
 class TagRoute extends React.Component {
   render() {
