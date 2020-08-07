@@ -1,10 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from '../img/pageLogo.png'
-import InstagramIcon from '../img/InstagramIcon'
-import GithubIcon from '../img/GithubIcon'
-import TwitterIcon from '../img/TwitterIcon'
-import YoutubeIcon from '../img/YoutubeIcon'
 
 class Navbar extends React.Component {
   componentDidMount() {
@@ -16,7 +12,7 @@ class Navbar extends React.Component {
     // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
       // Add a click event on each of them
-      $navbarBurgers.forEach(el => {
+      $navbarBurgers.forEach((el) => {
         el.addEventListener('click', () => {
           // Get the target from the "data-target" attribute
           const target = el.dataset.target
@@ -99,46 +95,7 @@ class Navbar extends React.Component {
               Learning Programming
             </Link>
           </div>
-          <div className="navbar-end">
-            <div className="icons-container">
-              <a
-                href="https://twitter.com/pawe_kar"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <TwitterIcon />
-                </span>
-              </a>
-              <a
-                href="https://www.instagram.com/selfmadedeveloper/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <InstagramIcon />
-                </span>
-              </a>
-              <a
-                href="https://github.com/Karniej/selfmadedeveloper"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <GithubIcon />
-                </span>
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCZFNvtnHjY_8pIEQmD16qiA"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <YoutubeIcon />
-                </span>
-              </a>
-            </div>
-          </div>
+          <div className="navbar-end"></div>
         </div>
       </nav>
     )

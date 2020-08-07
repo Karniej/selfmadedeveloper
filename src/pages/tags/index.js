@@ -23,7 +23,7 @@ const TagsPage = ({
           >
             <h2 className="blog-post-title">Tags</h2>
             <ul className="taglist">
-              {group.map(tag => (
+              {group.map((tag) => (
                 <li key={tag.fieldValue}>
                   <span className="tag is-primary">
                     <Link
