@@ -125,14 +125,14 @@ const Sidebar = () => (
         </p>
       </div>
     </div>
-    <script src='https://cdn.lightwidget.com/widgets/lightwidget.js'></script>
+    {/*<script src='https://cdn.lightwidget.com/widgets/lightwidget.js'></script>
     <iframe
       src='//lightwidget.com/widgets/cdf26693593e5258a1f2c1e62dc8bd47.html'
       scrolling='no'
       allowtransparency='true'
       className='lightwidget-widget'
       style={{ width: '100%', height: '300px', overflow: 'hidden', borderRadius: '5px' }}
-    />
+/>*/}
     <Timeline
       dataSource={{
         sourceType: 'profile',
