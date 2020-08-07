@@ -13,34 +13,40 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className='section'>
-          <Form />
-          <div className='container content content-container'>
-            <div className='columns'>
-              <div className='column'>
+        <section className="section">
+          <div className="container content content-container">
+            <Form />
+            <div className="columns">
+              <div className="column">
                 {posts.map(({ node: post }) => {
                   return (
-                    <div key={post.id} className='post'>
+                    <div key={post.id} className="post">
                       <a href={post.fields.slug}>
-                        <h1 className='post-title'>{post.frontmatter.title}</h1>
+                        <h1 className="post-title">{post.frontmatter.title}</h1>
                       </a>
                       <a href={post.fields.slug}>
-                      <div className='post-inner'>
-                        <img
-                          className='post-thumbnail'
-                          alt='post thumbnail'
-                          src={post.frontmatter.thumbnail.childImageSharp.fluid.src}
-                        />
-                        <p className='post-excerpt'>{post.excerpt}</p>
-                      </div>
+                        <div className="post-inner">
+                          <img
+                            className="post-thumbnail"
+                            alt="post thumbnail"
+                            src={
+                              post.frontmatter.thumbnail.childImageSharp.fluid
+                                .src
+                            }
+                          />
+                          <p className="post-excerpt">{post.excerpt}</p>
+                        </div>
                       </a>
-                      <div className='post-footer'>
+                      <div className="post-footer">
                         {post.frontmatter.tags && (
-                          <ul className='post-tags'>
+                          <ul className="post-tags">
                             {post.frontmatter.tags.map((tag) => (
                               <li key={tag + `tag`}>
-                                <span className='tag is-primary post-tag'>
-                                  <Link className='link' to={`/tags/${kebabCase(tag)}/`}>
+                                <span className="tag is-primary post-tag">
+                                  <Link
+                                    className="link"
+                                    to={`/tags/${kebabCase(tag)}/`}
+                                  >
                                     # {tag}
                                   </Link>
                                 </span>
@@ -48,13 +54,15 @@ export default class IndexPage extends React.Component {
                             ))}
                           </ul>
                         )}
-                        <small className='post-date'>{post.frontmatter.date}</small>
+                        <small className="post-date">
+                          {post.frontmatter.date}
+                        </small>
                       </div>
                     </div>
                   )
                 })}
               </div>
-              <div className='column is-3'>
+              <div className="column is-3">
                 <Sidebar />
               </div>
             </div>

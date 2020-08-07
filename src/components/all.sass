@@ -36,9 +36,12 @@ body,
 .layout
   height: 100%
 
-.navbar .navbar-menu
-  box-shadow:none !important
-  background-color: $default-black
+.navbar
+  padding-top: 0.5em
+  padding-bottom: 0.5em
+  .navbar-menu
+    box-shadow:none !important
+    background-color: $default-black
 
 .navbar-item
   font-family: $fontOswald
@@ -46,31 +49,29 @@ body,
   letter-spacing: 0.4px
 
 
-.navbar-end .icons-container
+.icons-container
   align-items: center
   justify-content: center
   display: flex
   flex-direction: row
 
-.navbar-end .icons-container a
-  padding: 0.5em
-  padding-bottom: 0
-
-.navbar-menu a svg:hover #github
-  fill: $selfmadedeveloper-yellow
-
-.navbar-menu a svg:hover #instagram
-  fill: $selfmadedeveloper-yellow
-
-.navbar-menu a svg:hover #twitter
-  fill: $selfmadedeveloper-yellow
-
-.navbar-menu a svg:hover #youtube
-  fill: $selfmadedeveloper-yellow
+.icons-container a
+  padding: 0.75em
+  padding-bottom: 0.5em
+  padding-top: 0px
+  svg:hover #github
+    fill: $selfmadedeveloper-yellow
+  svg:hover #instagram
+    fill: $selfmadedeveloper-yellow
+  svg:hover #twitter
+    fill: $selfmadedeveloper-yellow
+  svg:hover #youtube
+    fill: $selfmadedeveloper-yellow
 
 .navbar-item:hover
   background-color: $default-black !important
   color: $selfmadedeveloper-yellow !important
+  transform: $transformScale
 
 .is-active
   color: $selfmadedeveloper-yellow
@@ -102,8 +103,8 @@ body,
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
   box-shadow: 0 5px 10px rgba(0, 0, 0, .15)
 
-.content .taglist
-  list-style: none
+.taglist
+  list-style: none !important
   margin-bottom: 0
   margin-left: 0
   margin-top: 1.5rem
@@ -115,6 +116,9 @@ body,
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+  li:hover
+    transform: $transformScale
+
 
 // Helper Classes
 .full-width-image-container
@@ -161,6 +165,9 @@ body,
   padding-bottom: 1.5em
   @media screen and (max-width: $break-small)
     padding-bottom: 1em
+
+.post:hover
+  transform: $transformScale
 
 .post-title
   text-transform: uppercase
@@ -238,12 +245,15 @@ body,
   border-radius: $border-radius
   border-color: $default-black
   margin: 2rem 0px !important
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, .15)
+  -moz-box-shadow: 0 2px 20px rgba(0, 0, 0, .15)
+  box-shadow: 0 2px 20px rgba(0, 0, 0, .15)
 
 .form-title
   text-transform: uppercase
   font-family: $fontOswald
   font-size: 20px
-  color: $primary-invert
+  color: $primary-invert !important
 
 .form-subtitle
   font-family: $fontOswald
@@ -266,6 +276,7 @@ body,
   color: $default-black
   text-transform: uppercase
   font-family: $fontOswald
+  font-size: 1.25em
 
 .form-wrapper
   justify-content: center
@@ -314,19 +325,20 @@ body,
     align-items: center
     justify-content: flex-start
     flex-direction: column
+    width: 100%
     p
-      font-size: 0.75rem
+      font-size: 1em
       text-align: left
       width: 100%
-  .icons-container a
-      padding: 1rem
+
   .links-articles-container
     display: flex
     align-items: center
     justify-content: flex-start
     flex-direction: column
+    width: 100%
     .links-paragraph
-      font-size: 0.75rem
+      font-size: 1rem
       padding-left: 1rem
       text-align: left
     a
@@ -354,7 +366,7 @@ body,
 .links-title
   padding: 1rem 0
   color: $primary-invert !important
-  font-size: 1.5rem
+  font-size: 1em
   text-align: center
   text-transform: uppercase
   span.colored
@@ -366,7 +378,7 @@ body,
 
 .links-paragraph
   color: $primary-invert
-  font-size: 1rem
+  font-size: 1em
   text-align: center
   text-transform: uppercase
   .colored
@@ -405,14 +417,13 @@ body,
   @media screen and (max-width: $break-small)
    width: 20%
 
-.sidebar:hover
-  transform: skewX(-5deg)
-  transform: rotateX(5deg)
-
 .form-button
   color: $default-black !important
   font-family: $fontOswald !important
   text-transform: uppercase
+
+.form-button:hover
+  transform: $transformScale
 
 
 @import "~bulma"

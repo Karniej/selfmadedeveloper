@@ -8,13 +8,17 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className='section'>
-      <div className='container content content-container'>
-        <div className='columns'>
-          <div className='column is-10 is-offset-1'>
-            <h2 className='subtitle tags-header'>{title}</h2>
-            <img className='about-me-image' alt='selfmade developer' src='../img/me.jpg' />
-            <PageContent className='content' content={content} />
+    <section className="section">
+      <div className="container content content-container">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <h2 className="subtitle tags-header">{title}</h2>
+            <img
+              className="about-me-image"
+              alt="selfmade developer"
+              src="../img/me.jpg"
+            />
+            <PageContent className="content" content={content} />
           </div>
         </div>
       </div>

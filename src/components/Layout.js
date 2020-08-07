@@ -22,7 +22,7 @@ const TemplateWrapper = ({
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <div className="layout">
         <Helmet>
           <html lang="en" />

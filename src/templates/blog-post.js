@@ -21,26 +21,26 @@ export const BlogPostTemplate = ({
     title: title,
   }
   return (
-    <section className='section'>
+    <section className="section">
       {helmet || ''}
-      <div className='container content content-container'>
-        <div className='columns'>
-          <div className='column'>
-            <h2 className='blog-post-title'>{title}</h2>
+      <div className="container content content-container">
+        <div className="columns">
+          <div className="column">
+            <h2 className="blog-post-title">{title}</h2>
             <PostContent content={content} />
-            <p className='post-date'>{date}</p>
+            <p className="post-date">{date}</p>
             <hr />
             <CommentCount config={disqusConfig} />
             <Disqus config={disqusConfig} />
             <hr />
             {tags && (
-              <div className='taglist-container'>
-                <h4 className='taglist-header'>Tags:</h4>
-                <ul className='taglist'>
+              <div className="taglist-container">
+                <h4 className="taglist-header">Tags:</h4>
+                <ul className="taglist">
                   {tags.map((tag) => (
                     <li key={tag + `tag`}>
-                      <span className='tag is-primary'>
-                        <Link className='link' to={`/tags/${kebabCase(tag)}/`}>
+                      <span className="tag is-primary">
+                        <Link className="link" to={`/tags/${kebabCase(tag)}/`}>
                           {tag}
                         </Link>
                       </span>
@@ -50,8 +50,8 @@ export const BlogPostTemplate = ({
               </div>
             )}
           </div>
-          <div className='column is-3'>
-              <Sidebar />
+          <div className="column is-3">
+            <Sidebar />
           </div>
         </div>
       </div>
@@ -77,9 +77,12 @@ const BlogPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate='%s | Blog'>
+          <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta name='description' content={`${post.frontmatter.description}`} />
+            <meta
+              name="description"
+              content={`${post.frontmatter.description}`}
+            />
           </Helmet>
         }
         thumbnail={post.frontmatter.thumbnail.childImageSharp.fluid.src}

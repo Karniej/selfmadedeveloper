@@ -32,7 +32,7 @@ const Form = () => {
       fetch(form.action, {
         method: form.method,
         body: new FormData(form),
-      }).then(res => {
+      }).then((res) => {
         setLoading(false)
 
         if (res.status === 200) {
@@ -54,11 +54,11 @@ const Form = () => {
       })
     }
   }
-  const handleChangeName = e => {
+  const handleChangeName = (e) => {
     setName(e.target.value)
   }
 
-  const handleChangeEmail = e => {
+  const handleChangeEmail = (e) => {
     setEmail(e.target.value)
   }
 
@@ -87,7 +87,9 @@ const Form = () => {
             opacity: !isFormVisible ? 1 : 0,
           }}
         >
-          <h1 className="form-title">Confirmatiom email has been sent!</h1>
+          <h1 className="form-title is-white">
+            Confirmatiom email has been sent!
+          </h1>
           <p className="form-subtitle">
             Check your email and confirm your subscription to weekly newsletter.
           </p>
@@ -106,6 +108,7 @@ const Form = () => {
             data-code="r2v5f2"
             method="post"
             target="_blank"
+            rel="noreferrer"
             onSubmit={handleSubmit}
             style={{ display: isFormVisible ? 'flex' : 'none' }}
           >
