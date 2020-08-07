@@ -50,7 +50,7 @@ class Navbar extends React.Component {
             <span />
           </div>
         </div>
-        <div id="navMenu" className="navbar-menu ">
+        <div id="navMenu" className="navbar-menu">
           <div className="navbar-start has-text-centered">
             <Link
               className="navbar-item"
