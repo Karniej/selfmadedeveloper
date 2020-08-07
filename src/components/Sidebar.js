@@ -61,7 +61,7 @@ const Sidebar = () => (
         </a>
       </div>
       <hr style={{ marginBottom: '1.25em' }} />
-      <p className="links-paragraph">
+      <p className="links-paragraph-title">
         Latest <span className="colored">articles </span>
       </p>
       <div className="links-articles-container">
@@ -109,7 +109,7 @@ const Sidebar = () => (
         </a>
       </div>
       <hr style={{ marginBottom: '1.25em', marginTop: '1.25em' }} />
-      <p className="links-paragraph">
+      <p className="links-paragraph-title">
         Current <span className="colored">project:</span>
       </p>
       <div className="links-articles-container">
@@ -127,7 +127,7 @@ const Sidebar = () => (
         </a>
       </div>
       <hr style={{ marginBottom: '1.25em', marginTop: '1.25em' }} />
-      <p className="links-paragraph">
+      <p className="links-paragraph-title">
         Desk <span className="colored">setup:</span>
       </p>
       <div className="setup-container">
@@ -145,7 +145,6 @@ const Sidebar = () => (
         <p className="links-paragraph">
           <span className="colored">Keychron</span> K1 keyboard
         </p>
-        z
       </div>
     </div>
   </div>
