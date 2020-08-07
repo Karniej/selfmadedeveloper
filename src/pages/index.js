@@ -13,43 +13,48 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
-      <section className='section'>
-        <div className='container content content-container'>
+      <section className="section">
+        <div className="container content content-container">
           <Form />
-          <div className='columns'>
-            <div className='column'>
+          <div className="columns">
+            <div className="column">
               {posts.map(({ node: post }, index) => {
                 const isIndex0 = index === 0
-                const classNames = isIndex0 ? 'post-thumbnail is-index-0' : 'post-thumbnail'
+                const classNames = isIndex0
+                  ? 'post-thumbnail is-index-0'
+                  : 'post-thumbnail'
 
                 const postThumbnail = () => (
                   <img
                     className={classNames}
-                    alt='post thumbnail'
+                    alt="post thumbnail"
                     src={post.frontmatter.thumbnail.childImageSharp.fluid.src}
                   />
                 )
 
                 return (
-                  <div key={post.id} className='post'>
+                  <div key={post.id} className="post">
                     {!isTabletOrMobile && isIndex0 && postThumbnail()}
                     <a href={post.fields.slug}>
-                      <h1 className='post-title'>{post.frontmatter.title}</h1>
+                      <h1 className="post-title">{post.frontmatter.title}</h1>
                     </a>
                     {isTabletOrMobile && isIndex0 && postThumbnail()}
                     <a href={post.fields.slug}>
-                      <div className='post-inner'>
+                      <div className="post-inner">
                         {!isIndex0 && postThumbnail()}
-                        <p className='post-excerpt'>{post.excerpt}</p>
+                        <p className="post-excerpt">{post.excerpt}</p>
                       </div>
                     </a>
-                    <div className='post-footer'>
+                    <div className="post-footer">
                       {post.frontmatter.tags && (
-                        <ul className='post-tags'>
+                        <ul className="post-tags">
                           {post.frontmatter.tags.map((tag) => (
                             <li key={tag + `tag`}>
-                              <span className='tag is-primary post-tag'>
-                                <Link className='link' to={`/tags/${kebabCase(tag)}/`}>
+                              <span className="tag is-primary post-tag">
+                                <Link
+                                  className="link"
+                                  to={`/tags/${kebabCase(tag)}/`}
+                                >
                                   # {tag}
                                 </Link>
                               </span>
@@ -57,13 +62,15 @@ const IndexPage = ({ data }) => {
                           ))}
                         </ul>
                       )}
-                      <small className='post-date'>{post.frontmatter.date}</small>
+                      <small className="post-date">
+                        {post.frontmatter.date}
+                      </small>
                     </div>
                   </div>
                 )
               })}
             </div>
-            <div className='column is-3'>
+            <div className="column is-3">
               <Sidebar />
             </div>
           </div>
