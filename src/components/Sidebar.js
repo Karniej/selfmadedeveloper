@@ -61,10 +61,23 @@ const Sidebar = () => (
         </a>
       </div>
       <hr style={{ marginBottom: '1.25em' }} />
-      <p className="links-paragraph">
+      <p className="links-paragraph-title">
         Latest <span className="colored">articles </span>
       </p>
       <div className="links-articles-container">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://blog.logrocket.com/common-bugs-react-native-scrollview/"
+          id="logrocket"
+        >
+          <img className="logrocket" alt="logrocket logo" src={logrocket} />
+          <p className="links-paragraph">
+            Common bugs in
+            <span className="colored"> React Native ScrollView </span>
+            and how to fix them
+          </p>
+        </a>
         <a
           target="_blank"
           rel="noreferrer"
@@ -89,27 +102,9 @@ const Sidebar = () => (
             <span className="colored"> react-native-paper </span>
           </p>
         </a>
-        <Link to="/blog/2019-10/2019-10.23-learning-react-native/">
-          <img id="selfmadedev" alt="selfmadev logo" src={selfmadedev} />
-          <p className="links-paragraph">
-            Learning
-            <span className="colored"> React Native</span>
-          </p>
-        </Link>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://blog.logrocket.com/how-to-make-tinder-like-card-animations-with-react-native/"
-        >
-          <img className="logrocket" alt="logrocket logo" src={logrocket} />
-          <p className="links-paragraph">
-            How to make Tinder-like card animations with
-            <span className="colored"> React Native</span>
-          </p>
-        </a>
       </div>
       <hr style={{ marginBottom: '1.25em', marginTop: '1.25em' }} />
-      <p className="links-paragraph">
+      <p className="links-paragraph-title">
         Current <span className="colored">project:</span>
       </p>
       <div className="links-articles-container">
@@ -127,7 +122,7 @@ const Sidebar = () => (
         </a>
       </div>
       <hr style={{ marginBottom: '1.25em', marginTop: '1.25em' }} />
-      <p className="links-paragraph">
+      <p className="links-paragraph-title">
         Desk <span className="colored">setup:</span>
       </p>
       <div className="setup-container">
@@ -145,7 +140,6 @@ const Sidebar = () => (
         <p className="links-paragraph">
           <span className="colored">Keychron</span> K1 keyboard
         </p>
-        z
       </div>
     </div>
   </div>

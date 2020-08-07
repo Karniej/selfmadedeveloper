@@ -43,6 +43,10 @@ body,
     box-shadow:none !important
     background-color: $default-black
 
+.navbar-burger span
+  height: 2px !important
+  width: 24px !important
+
 .navbar-item
   font-family: $fontOswald
   text-transform: uppercase
@@ -248,6 +252,10 @@ body,
   -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, .15)
   -moz-box-shadow: 0 2px 20px rgba(0, 0, 0, .15)
   box-shadow: 0 2px 20px rgba(0, 0, 0, .15)
+  
+.form-container:hover
+  transform: $transformScale
+
 
 .form-title
   text-transform: uppercase
@@ -379,6 +387,14 @@ body,
 .links-paragraph
   color: $primary-invert
   font-size: 1em
+  text-align: center
+  text-transform: uppercase
+  .colored
+    color: $primary
+
+.links-paragraph-title
+  color: $primary-invert
+  font-size: 1.2em
   text-align: center
   text-transform: uppercase
   .colored
