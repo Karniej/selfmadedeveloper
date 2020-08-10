@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: UseEffect, UsePrevious and handling render issues inside a complex React Native Swiper Component.
-date: 2020-08-08T15:45:10.000Z
+date: 2020-08-10T15:45:10.000Z
 description: How I tackled the rendering issues in a complex React Native component.
 thumbnail: "/static/img/6632FD95-4EFC-4717-AE4A-E667D798C28D-4472B90C-3A34-4524-9985-C6BA671B3753.JPG"
 tags:
