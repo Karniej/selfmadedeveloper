@@ -3,13 +3,13 @@ templateKey: blog-post
 title: Programming-learn it by yourself part II
 date: 2018-07-23T15:04:10.000Z
 description: Second part of the series when I talk about how I learned programming by myself.
-thumbnail: "/static/img/img_0557-520x520.jpg"
+thumbnail: '/static/img/img_0557-520x520.jpg'
 tags:
   - learning programming
   - javascript
 ---
 
->*Second part of the series when I talk about how I learned programming by myself.*
+> _Second part of the series when I talk about how I learned programming by myself._
 
 # Part II: Practice
 
@@ -48,10 +48,9 @@ At this stage, you should focus on your **pure** **JavaScript** **skills**, you 
 
 The best place I can think of to take your JavaScript to the next level is [javascript30.com](https://JavaScript30.com/friend/SELFMADE). This is the third awesome free course from the same instructor Wes Bos, which explain you all of those concepts in an incredible easy way.
 
-In this course, you focus on building 30 small and fun applications with JavaScript for 30 days. You can do the course in one take, or one lesson a day, it all depends on how much time you have. I recommend to go through it all at least 2-3 times.*
+In this course, you focus on building 30 small and fun applications with JavaScript for 30 days. You can do the course in one take, or one lesson a day, it all depends on how much time you have. I recommend to go through it all at least 2-3 times.\*
 
->*When you watch the video with the course and you program together with a teacher, you test that what the teacher says works and you feel good, because you wrote something that works.*
->*Actually the teacher wrote that and you've rewritten it. Be aware that if you do that, you grasp a little of how does it works, but you actually don't know how to write it itself. That's why I recommend 3 steps of working with online courses.*
+> _When you watch the video with the course and you program together with a teacher, you test that what the teacher says works and you feel good, because you wrote something that works._ >_Actually the teacher wrote that and you've rewritten it. Be aware that if you do that, you grasp a little of how does it works, but you actually don't know how to write it itself. That's why I recommend 3 steps of working with online courses._
 
 - watch the video and write the code together with a teacher.
 - watch the video again, but more carefully and don't write the code, only write some notes.
@@ -62,7 +61,7 @@ This was a great way of learning for me, because I knew how the app should work 
 This course introduces you to a few interesting [Web API](https://developer.mozilla.org/en-US/docs/WebAPI)'s which you'll probably use in your daily job. After going through all of the materials in this online course, my recommendation is to take 1 application which you liked the most and play with it by remaking it and adding more features to it. I actually took the [webcam](https://karniej.github.io/glitchcam/) fun and built added a few features to it.
 
 I learned a lot while doing it and it was quite funny experience, because I could take this kind of photo's with my camera:
-![glitchcam photo](/static/img/glitchcamphoto.jpeg)
+![glitchcam photo](../../../img/glitchcamphoto.jpeg)
 
 In the first post, I wrote about differentiating ways of learning. That's why I think that after doing all those courses till now, it's good to moment to start reading a book on JavaScript. I personally recommend [You Don't Know JS](https://github.com/getify/You-Dont-Know-JS) series written by Kyle Simpson.
 
@@ -76,7 +75,7 @@ After going through all of those courses and building a few applications from it
 
 ## **3. Choosing your framework**
 
->*First and foremost - your pure JavaScript skills are the most important. Even after choosing a framework, because if you want to get a job in the industry now you have to choose one, you should always keep working on your pure JavaScript skills. Ain't no framework scary, when your core JavaScript skills are on point!*
+> _First and foremost - your pure JavaScript skills are the most important. Even after choosing a framework, because if you want to get a job in the industry now you have to choose one, you should always keep working on your pure JavaScript skills. Ain't no framework scary, when your core JavaScript skills are on point!_
 
 That said, I am going to recommend you the only framework I know - React. This is my favourite one, I tried once Angular and didn't understand it at all, so I went back to React.
 This awesome framework is actually a library with great and awesome open-source tooling around it, which makes it a framework. What's React exactly you can find out at reactjs.org, I am gonna write I few points, why I think React is the best framework for beginners.
@@ -89,9 +88,9 @@ This awesome framework is actually a library with great and awesome open-source 
 - Has a very pleasant, declarative way of writing small code building blocks, whom which you'll build bigger blocks, which makes an easy way of building applications
 - You can create Native Mobile applications with it - React Native is the biggest cross-platform framework for creating mobile apps.
 - You can also create Desktop applications with it. Electron make's it possible for you.
-- There's a massive amount of free knowledge on React online!*
+- There's a massive amount of free knowledge on React online!\*
 
->*For example [this](https://github.com/enaqx/awesome-react) website is probably the only one website you need to learn about React. It has gathered enormous awesome knowledge about this framework.*
+> _For example [this](https://github.com/enaqx/awesome-react) website is probably the only one website you need to learn about React. It has gathered enormous awesome knowledge about this framework._
 
 You learn React once and you can use this knowledge and way of working for all the platforms you like - Web, Mobile, Desktop. As a beginner this is awesome thing, because you want to learn enough to get a job first and then you can go with it wherever you want.
 
@@ -103,7 +102,7 @@ When you'll go through all those courses, there's time to practice. My recommend
 
 If you want to learn React, you should build something similar to this application, try to built it only with React, without Redux state management system first. Then you should understand how React exactly works and why you need Redux.
 
->*Fetching data from an API and displaying it is very important task to do in your everyday job as JavaScript developer. Knowing this, you now definitely have to do some practice in that. That’s why I have an assignment for you!*
+> _Fetching data from an API and displaying it is very important task to do in your everyday job as JavaScript developer. Knowing this, you now definitely have to do some practice in that. That’s why I have an assignment for you!_
 
 **The Assingment**:
 
@@ -111,7 +110,7 @@ If you want to learn React, you should build something similar to this applicati
 2. You can style the application as you want, but the application working is the number one criteria.
 3. If you’ll still have time to do it, try to save data in Local storage, try make some filtering of data.
 
->*Example API's you could use : [punkapi](https://punkapi.com/), [developer.nytimes](https://developer.nytimes.com/). If you’ll do all of that practice, I guarantee you that your skills will grow a lot.*
+> _Example API's you could use : [punkapi](https://punkapi.com/), [developer.nytimes](https://developer.nytimes.com/). If you’ll do all of that practice, I guarantee you that your skills will grow a lot._
 
 ---
 

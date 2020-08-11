@@ -3,12 +3,12 @@ templateKey: blog-post
 title: React Native Quick Introduction
 date: 2018-07-02T15:04:10.000Z
 description: By the end of May, React had it's 5th birthday, so it's a good time to write a post about introduction to React and React Native world.
-thumbnail: "/static/img/React_Native_Logo-e1533896717110-520x520.png"
+thumbnail: '/static/img/React_Native_Logo-e1533896717110-520x520.png'
 tags:
   - react native
 ---
 
-![React on Twitter](/static/img/ReactOnTwitter.png)
+![React on Twitter](../../../img/ReactOnTwitter.png)
 
 # **React**
 
@@ -31,7 +31,7 @@ React is a JavaScript library for building user interfaces in a **declarative**,
 - Compose them to make complex UI’s
 - Easly pass rich data trough app and keep state out of the DOM
 
-![Login Screen](/static/img/Loginscreen.png)
+![Login Screen](../../../img/Loginscreen.png)
 
 # React Native
 
@@ -43,15 +43,16 @@ With **React Native**, you can build a real mobile app - you don’t build a “
 - If we are building an Android application, it will result with a native TextView.
 
 **Special advantage for Native Developers:**
->*React Native combines smoothly with components written in Objective-C, Java, or Swift. It's simple to drop down to native code if you need to optimize a few aspects of your application. It's also easy to build part of your app in React Native, and part of >your app using native code directly.*
+
+> _React Native combines smoothly with components written in Objective-C, Java, or Swift. It's simple to drop down to native code if you need to optimize a few aspects of your application. It's also easy to build part of your app in React Native, and part of >your app using native code directly._
 
 React Native lets you build your app faster. Instead of recompiling, you can reload your app instantly thanks to **Hot Reloading.**
 
 The idea behind **hot reloading** is to keep the app running and to inject new versions of the files that you edited at runtime and while writing code you can even run new code while retaining your application state.
 
- **How exactly does React Native work under the hood ?**
+**How exactly does React Native work under the hood ?**
 
-![Structure](/static/img/ReactNativegraph.png)
+![Structure](../../../img/ReactNativegraph.png)
 
 There are two important threads running in each React Native application. One of them is the **Main Thread**, which also runs in each standard native app. It handles displaying the elements of the user interface and processes user gestures. The other one is specific to React Native. Its task is to execute the JavaScript code in a separate JavaScript engine - **JS Thread**.
 
