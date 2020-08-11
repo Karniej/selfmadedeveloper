@@ -3,13 +3,13 @@ templateKey: blog-post
 title: Programming-learn it by yourself part I
 date: 2018-07-16T09:04:10.000Z
 description: How I started learning programming in JavaScript and how my web development preparation led to mobile development.
-thumbnail: "/static/img/img_0566-1-520x520.jpg"
+thumbnail: '/static/img/img_0566-1-520x520.jpg'
 tags:
   - learning programming
   - javascript
 ---
 
->*How I started learning programming in JavaScript and how my web development preparation led to mobile development. Part I of a few-part series explaining how to learn coding by yourself*
+> _How I started learning programming in JavaScript and how my web development preparation led to mobile development. Part I of a few-part series explaining how to learn coding by yourself_
 
 # How to start learning programming
 
@@ -23,7 +23,7 @@ I receive that question on my [Instagram](https://www.instagram.com/selfmadedev
 
 I won't write much about those two options. The **third** way is to learn it by yourself. I learned everything by myself at home and I'll try to give you my best ideas of how to do it this way too. By the way, if you want to become a **good developer**, you still will have to **practice** **every day **if you'll end up using one of those first two options.
 
-___
+---
 
 # Part I: The Basics
 
@@ -39,8 +39,8 @@ This short article will try explain this subject in a very simple way, feel free
 
 ### **2. Learn the foundation of web development programming.**
 
-![My codecademy courses overview](/static/img/codecademy-screen.png)
- *This picture shows the day when I decided to be a programmer and the day I started - 9th of November 2016. It was a first day of my learning programming online.*
+![My codecademy courses overview](../../../img/codecademy-screen.png)
+_This picture shows the day when I decided to be a programmer and the day I started - 9th of November 2016. It was a first day of my learning programming online._
 
 When you know how the Web works, you can now start learning the basics of web development - **HTML** , **CSS** and **JavaScript**. Those are the building blocks of every website on the internet.
 
@@ -57,20 +57,20 @@ Just go through all the courses about **HTML**, **CSS** and **JavaScript**. The 
 - Learn Sass
 - Introduction to JavaScript
 - Introduction to jQuery
-- *Learn ReactJS Part I and II**
+- \*Learn ReactJS Part I and II\*\*
 
->*This one you can skip now and back to it later, after going through the next course below.*
+> _This one you can skip now and back to it later, after going through the next course below._
 
 ### **3. Solidify the basics**
 
-![freecodecamp progress](/static/img/freecodecamp-progress.png)
-*This picture shows my points made on freecodecamp. I haven't finished the certificate, but I still learned a lot from it and was able to get my first job.*
+![freecodecamp progress](../../../img/freecodecamp-progress.png)
+_This picture shows my points made on freecodecamp. I haven't finished the certificate, but I still learned a lot from it and was able to get my first job._
 
 After you'll go through all the 9 courses listed above, you should have a grasp of the basics of **HTML**, **CSS** and **JavaScript**. Those courses may take some time, depending of how much time you can spend on learning daily. That's why before diving deeper, it's good to go through it once again, but this time try with another source which is [freecodecamp](https://www.freecodecamp.org/). **Freecodecamp** has a different pace of learning, a little bit quicker than **Codecademy**, that's why I recommend it doing secondly.
 
 After going through some **HTML** and **CSS** it focus a lot on **JavaScript**. In order to get **The** **Freecodecamp's** **Certificate**, you'll have to go through a lot of **JavaScript** assignments and a few projects which you'll have to do by yourself. This is an amazing place to learn and multitude people went through the course. So when you'll stuck on some assignment, you'll find many answers for them online.
 
->*When you'll go through Freecodecamp, I recommend you going back to codecademy and trying out the courses on ReactJS.*
+> _When you'll go through Freecodecamp, I recommend you going back to codecademy and trying out the courses on ReactJS._
 
 ## **Those are the first great steps into becoming web developer!**
 
@@ -92,8 +92,8 @@ Here are a few important things to remember which could help you in learning on 
 
 - **Create a list of tasks and goals** in order to keep **track of your progress**. This is a very useful thing to motivate yourself while learning and to see how far you've gone. Set yourself a reminder about programming activities and it will also help you being accountable to yourself. Learn about setting [S.M.A.R.T.](www.projectsmart.co.uk/smart-goals.php) goals. In order to keep track your progress, use any App of [those](https://www.lifewire.com/best-goal-setting-apps-3485941) or something like **Trello** or **Nozbe**.
 
-- After taking a few courses, ask yourself **if you like doing what you're doing** and if not, ask yourself if it will be needed in the main goal of your 'why' you started programming. For example I learned about basics of how to create websites with WordPress. *I didn't like it at all* and before diving into the more advanced topics I focused more on JavaScript. It was a great decision for me in the end, because I now create mobile apps with JavaScript.
+- After taking a few courses, ask yourself **if you like doing what you're doing** and if not, ask yourself if it will be needed in the main goal of your 'why' you started programming. For example I learned about basics of how to create websites with WordPress. _I didn't like it at all_ and before diving into the more advanced topics I focused more on JavaScript. It was a great decision for me in the end, because I now create mobile apps with JavaScript.
 
-That's it for today. In the next article I'll focus on what to learn after you'll finish those courses and in the last article I'll explain how I went from here to mobile development in <strongReact Native**. Please let me know in the **comments** what else you would like to know about in terms of learning programming.
+That's it for today. In the next article I'll focus on what to learn after you'll finish those courses and in the last article I'll explain how I went from here to mobile development in <strongReact Native**. Please let me know in the **comments\*\* what else you would like to know about in terms of learning programming.
 
 **Have a productive week!**
