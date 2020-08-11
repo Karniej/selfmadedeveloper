@@ -32,7 +32,7 @@ After upgrading my project to RN v.0.60 I had problems with setting up the Sentr
 
 This error is my gone weekend of debugging. Out of a sudden I was getting this kind of error and couldn't launch my app in development mode and of course also couldn't build any `.ipa` file and when I did it crashed immediately
 
-![invalid-host-error](/static/img/IMG_3821.png)
+![invalid-host-error](../../../img/IMG_3821.png)
 
 I spent tons of hours of trying to figure out what was the problem and google didn't help me apart from this issue which is a [first link](https://github.com/facebook/react-native/issues/17007](https://github.com/facebook/react-native/issues/17007)) in the google search results when you search for (Invalid Host React Native).
 
