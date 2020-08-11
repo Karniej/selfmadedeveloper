@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 5 Visual Studio Code extensions for React Native Developers
 date: 2018-09-09T12:43:10.000Z
 description: 5 Visual Studio Code extensions for React Native Developers
-thumbnail: '../../../img/react-native-snippet.pngimg/IMG_2895.jpg'
+thumbnail: '/static/img/IMG_2895.jpg'
 tags:
   - learning programming
   - react native
