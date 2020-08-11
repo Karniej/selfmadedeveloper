@@ -16,7 +16,7 @@ So today I finally wanted to talk to you about some of the issues I had and how 
 ****
 One of the issues I had was having a correctly rendered component with all of its features which includes: rendering photo, likes, comments, download & share options & being reactive to filtering and sorting, etc. This component is pretty heavy, because it contains quite a lot of features.
 
-![usePrevious](/static/img/usePrevious.png)
+![usePrevious](../../../img/usePrevious.png)
 
 Before I get into explaining the component specific stuff I'll try to explain one concept which helped me solve one of the issues I encountered there.
 
@@ -26,7 +26,7 @@ Whenever we want to compare value of one of the current props/state to the previ
 
 Then when we have this custom hook - we just call it inside our component and assign it to a variable and then compare that variable value to a current value inside a ***useEffect*** hook. This is a great way to prevent unnecessary rerendering inside our apps & also making sure we're using the updated value.
 
-![useEffect](/static/img/useEffec.png)
+![useEffect](../../../img/useEffec.png)
 
 Why this works?  The ref object will always return the same value held in ref.current, except when explicitly updated ( for example like that: ref.current = ***newValue),*** which is by the way sometimes also usable concept I might explain in the future(or not).
 
