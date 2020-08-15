@@ -153,6 +153,7 @@ module.exports = {
         shortname: `selfmadedev`,
       },
     },
+    'gatsby-plugin-react-native-web',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -161,7 +162,6 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-react-native-web',
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }
