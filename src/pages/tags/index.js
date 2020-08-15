@@ -45,7 +45,7 @@ const TagsPage = ({
 
 export default TagsPage
 
-graphql`
+export const tagPageQuery = graphql`
   query TagsQuery {
     site {
       siteMetadata {
