@@ -88,7 +88,7 @@ IndexPage.propTypes = {
   }),
 }
 
-export const pageQuery = graphql`
+graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
