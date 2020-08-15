@@ -25,7 +25,6 @@ $fontOswald: 'Oswald', sans-serif
 
 *
   transition: 0.3s
-  font-family: 'Lato', sans-serif
 
 html,
 body,
@@ -48,7 +47,7 @@ body,
   width: 24px !important
 
 .navbar-item
-  font-family: $fontOswald
+  font-family: $fontOswald !important
   text-transform: uppercase
   letter-spacing: 0.4px
 
@@ -86,10 +85,13 @@ body,
 
 .content-container
   padding-top: $default-margin
+  h1, h2,h3,h4,h5,p
+    font-family: 'Lato', sans-serif
 
 .tags-header
   padding: $default-margin/2 0
-  font-family: $fontOswald
+  font-family: $fontOswald !important
+
   text-transform: uppercase
   margin-bottom: 0px !important
   color: $default-black
@@ -98,7 +100,7 @@ body,
   margin-top: 3rem
 
 .taglist-header
-  font-family: $fontOswald
+  font-family: $fontOswald !important
   text-transform: uppercase
 
 .tag-header
@@ -172,7 +174,7 @@ body,
 
 .post-title
   text-transform: uppercase
-  font-family: $fontOswald
+  font-family: $fontOswald !important
   @media screen and (max-width: $break-small)
     font-size: 24px !important
 
@@ -242,7 +244,8 @@ body,
 
 .blog-post-title
   text-transform: uppercase
-  font-family: $fontOswald
+  font-family: $fontOswald !important
+
   padding-bottom: $default-margin/2
   margin-bottom: 0 !important
 
@@ -261,12 +264,12 @@ body,
 
 .form-title
   text-transform: uppercase
-  font-family: $fontOswald
+  font-family: $fontOswald !important
   font-size: 20px
   color: $primary-invert !important
 
 .form-subtitle
-  font-family: $fontOswald
+  font-family: $fontOswald !important
   color: $primary
 
 .footer
@@ -276,7 +279,7 @@ body,
 .footer .copyright
   text-transform: uppercase
   letter-spacing: 0.6px
-  font-family: $fontOswald
+  font-family: $fontOswald !important
   font-size: 12px
   text-align: center
   color: $primary
@@ -285,7 +288,7 @@ body,
 .link
   color: $default-black
   text-transform: uppercase
-  font-family: $fontOswald
+  font-family: $fontOswald !important
   font-size: 1.25em
 
 .form-wrapper
@@ -293,7 +296,7 @@ body,
 
 .form-error
   color: $primary
-  font-family: $fontOswald
+  font-family: $fontOswald !important
   letter-spacing: 0.5px
   font-size: 11px
   text-align: left
@@ -437,6 +440,7 @@ body,
 .form-button
   color: $default-black !important
   font-family: $fontOswald !important
+
   text-transform: uppercase
 
 .form-button:hover

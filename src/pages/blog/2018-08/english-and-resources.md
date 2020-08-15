@@ -7,7 +7,7 @@ thumbnail: "/static/img/IMG_2903.PNG"
 tags:
   - out of scope
 ---
-# **My short story**
+## **My short story**
 
 I am from Poland and when I was young, my father had to go to the **USA** to make money. Thanks to it he understood that knowing English is very Important and I have been learning it since I was 6 or 7, when in polish schools there still wasn't even a standard as it is today. Owing to that fact, reading and writing in English now is pretty easy for me, but I still am working on my speaking.
 

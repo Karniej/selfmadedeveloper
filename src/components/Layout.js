@@ -39,7 +39,7 @@ const TemplateWrapper = ({
             href="/img/logo.png"
             sizes="32x32"
           />
-
+          <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
           <link rel="mask-icon" href="/img/logo.png" />
           <meta name="theme-color" content="#fff" />
 

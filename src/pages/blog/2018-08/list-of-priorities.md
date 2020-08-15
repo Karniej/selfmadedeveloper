@@ -7,7 +7,7 @@ thumbnail: "/static/img/img_0045-520x520.jpg"
 tags:
   - out of scope
 ---
-# Importance of prioritisation
+## Importance of prioritisation
 
 Lately I’ve got a lot on my head and I made a decision to put even more with an idea to write on Instagram and starting this blog. I do it, because I know myself and actually I tend to finish more things when I have a loads of things to do. In this state there’s no really place for unplanned action, that’s why prioritisation of tasks is very important and I feel like I am better and better at this.
 

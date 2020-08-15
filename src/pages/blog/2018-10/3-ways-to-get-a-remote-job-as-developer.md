@@ -9,7 +9,7 @@ tags:
   - working remotely
 ---
 
-# Intro
+## Intro
 
 As many of you may already know, one of the reasons why I even started learning programming was the promise of working remotely from anywhere I want. That's why I did a research on how to get the job and, as with the learning programming itself, I made a plan on how to get it.
 

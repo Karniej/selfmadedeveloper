@@ -18,7 +18,7 @@ So today I finally wanted to talk to you about some of the issues I had and how 
 
 One of the issues I had was having a correctly rendered component with all of its features which includes: rendering photo, likes, comments, download & share options & being reactive to filtering and sorting, etc. This component is pretty heavy, because it contains quite a lot of features.
 
-```javascript
+```jsx
 function usePrevious(value: string) {
   const ref = useRef()
 
@@ -38,7 +38,7 @@ Whenever we want to compare value of one of the current props/state to the previ
 
 Then when we have this custom hook - we just call it inside our component and assign it to a variable and then compare that variable value to a current value inside a **_useEffect_** hook. This is a great way to prevent unnecessary rerendering inside our apps & also making sure we're using the updated value.
 
-```javascript
+```jsx
 const prevMediumId = usePrevious(mediumId)
 
 useEffect(() => {
