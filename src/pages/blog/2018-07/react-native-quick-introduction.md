@@ -31,8 +31,33 @@ React is a JavaScript library for building user interfaces in a **declarative**,
 - Compose them to make complex UI’s
 - Easly pass rich data trough app and keep state out of the DOM
 
-![Login Screen](../../../img/Loginscreen.png)
+```javascript
 
+import React from 'react'
+import { Text } from 'react-native'
+import PropTypes from 'prop-types'
+import Header from '  components/Header/Header'
+import MainButton from '  components/MainButton/MainButton'
+import ContentWrapper from '  components/ContentWrapper/ContentWrapper'
+
+const LoginScreen = ({ navigation }) => {
+  return (
+    <ContentWrapper>
+      <Header title=' This is Login Screen'  />
+      <MainButton routeName=' DrawerStack'  navigation={navigation}>
+        <Text>Log In</Text>
+      </MainButton>
+    </ContentWrapper>
+  )
+}
+
+LoginScreen.propTypes = {
+  navigation: PropTypes.shape({ navigate: PropTypes.func}).isRequired
+}
+
+export default LoginScreen
+
+```
 # React Native
 
 Was announced at Facebook's React.js Conf in February 2015 and open-sourced in March 2015 **enables writing native Android and iOS applications** with **JavaScript** and **React**. It has the same way of building applications, but uses different components.

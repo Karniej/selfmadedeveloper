@@ -9,7 +9,7 @@ tags:
   - react native
 ---
 
-# Extensions
+## Extensions
 
 > _As many of you that follow me on [Instagram](https://www.instagram.com/selfmadedeveloper/) know. I use Visual Studio Code when working with code. I had some question about some extensions that I could recommend so here's a list of extensions that I use every day._
 

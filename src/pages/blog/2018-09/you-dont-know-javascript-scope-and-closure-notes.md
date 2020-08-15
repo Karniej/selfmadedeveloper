@@ -8,7 +8,7 @@ tags:
   - learning programming
 ---
 
-# **Intro**
+## **Intro**
 
 Hello there, this blog post is a short notes I wrote for myself to remember the concepts of  the book "You don't know JavaScript - Scope &amp; Closures" by Kyle Simpson.
 It's a really great book and I will only scratch a surface on the most important stuff I got from certain chapters of the book. I wrote it to better understand and remember what I've read. I hope it will encourage you to get read the book [online](https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&amp;%20closures/README.md#you-dont-know-js-scope--closures) ( it's free on Github) or buy yourself a copy!

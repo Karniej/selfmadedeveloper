@@ -10,7 +10,7 @@ tags:
   - react
 ---
 
-# Being flexible
+## Being flexible
 
 When you're working in a bigger company, there are around 500 people and a lots of projects from very different genre.
 For example I am now working in a Web Development project based on Angular. I do only CSS there, but I can read and find myself inside this project pretty easily.
@@ -19,7 +19,7 @@ When working with JavaScript to build React Native applications, I found out tha
 
 Because the syntax may be different in some cases, but the logic behind JavaScript frameworks is basically the same. That's why it's really not that important in terms of your programming skills which framework you'll choose.
 
-# Solving problems
+## Solving problems
 
 The real knowledge of solving problems and debugging issues is transferable to any framework and even for different languages.
 The only criteria of choosing a framework for anyone wondering should be:
@@ -33,7 +33,7 @@ So don't spend more time than a few hours to think about choosing the hottest fr
 
 The basics and concepts are first, but it still good to learn a framework. It just doesn't matter which one you'll chose in the long term and I recommend using React, because I see how my skills with vanillajs have grown thanks to React
 
-# My recommendation
+## My recommendation
 
 I actually recommend learning React if you aren't decided which framework to choose, but I just wanted to point it out that in the long term, it doesn't matter that much as you may think in the beginning.
 Mastering one will definitely make you a great programmer and will let you get familiar with another one much quicker?
